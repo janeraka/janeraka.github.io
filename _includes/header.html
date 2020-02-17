@@ -1,0 +1,49 @@
+	{% if page.layout contains "home" %}
+	<header class="brand">
+		<div class="bg">
+			{% include logos/bg.svg %}
+		</div>
+		<div class="logo">
+
+		
+			<div class="row-1">
+				<div class="marytykwawara">
+					{% include logos/marytykwawara.svg %}
+				</div>
+				{% if page.languages contains "pt" %}
+				<a href="#" class="speak" data-toggle="tooltip" title="Aprenda como pronunciar" data-placement="right">
+
+					{% else %}
+					<a href="#" class="speak" data-toggle="tooltip" title="Click to learn how to say it" data-placement="right">
+
+						{% endif %}
+					{% include icons/audio.svg %}</a>
+				</div>
+				<div class="slogan">
+					{% if page.languages contains "pt" %}
+					slogan em portugues
+					{% else %}
+					slogan in english
+					{% endif %}
+				</div>
+				
+				{% include switch.html %}
+
+			</div>
+		</header>
+
+
+
+		{% else %}
+			<header class="brand">
+{% if page.languages contains "pt" %}
+				<p><a href="/pt/home">logo aqui</a></p>
+					{% else %}
+				<p><a href="/en/home">logo here</a></p>
+					{% endif %}
+
+					
+				<h1>{{page.title }}</h1>
+				{% include switch.html %}
+			</header>
+				{% endif %}

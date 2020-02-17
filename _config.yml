@@ -1,0 +1,21 @@
+title: marytykwawara
+email: info@nicholasfrota.com
+description: >- # this means to ignore newlines until "baseurl:"
+  aaa
+baseurl: ''
+url: 'https://agendaawaete.github.io/'
+twitter_username: nonlinear
+github_username: nonlinear
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+exclude:
+  - node_modules
+  - LICENSE
+  - Makefile
+  - README.md
+  - package.json
+  - package-lock.json
+  - yarn.lock

@@ -1,0 +1,23 @@
+---
+layout: home
+---
+<html>
+{% include head.html %}
+<body>
+	<div class="container">
+		{% include header.html %}
+		<article class="main wow">
+			{% if page.languages contains "pt" %}
+			{% include pt/somos.html %}
+			{% include pt/missao.html %}
+			{% else %}
+			{% include en/somos.html %}
+			{% include en/missao.html %}
+			{% endif %}
+			{% include help.html %}
+		</article>
+		{% include footer.html %}
+	</div>
+	{% include script.html %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+footer.footer {
+	border-top: solid 1px $color-gray;
+	padding-top: $gap;
+	margin-top: $gap;
+	a:not(:first-of-type) {
+		margin-left: $gap;
+	}
+}

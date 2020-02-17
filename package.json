@@ -1,0 +1,22 @@
+{
+  "name": "marytykwawara",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animatewithsass": "^3.2.1",
+    "bootstrap": "^4.3.1",
+    "ics-to-json": "^1.0.0",
+    "jquery": "^3.4.1",
+    "lite-youtube-embed": "0.0.0",
+    "popper.js": "^1.15.0",
+    "tile": "github:praxisnyc/tile",
+    "wowjs": "^1.1.3"
+  }
+}
