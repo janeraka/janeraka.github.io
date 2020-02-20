@@ -50,3 +50,8 @@ Pending
 	- github
 	- youtube
 	- instagram
+
+
+- financiamento coletivo no site
+- sorteio de uma peça por mês a cada tantas assinaturas (tanto valor)
+- venda de produtos
