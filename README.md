@@ -24,8 +24,6 @@ Pending
 	1. aprovar artigos, escrever tradução
 1. design janeraka, animacao
 1. design de tiers de monthly subscription
-1. ~~buscar dominios para janeraka~~
-1. criar janeraka email no [mailgun](https://www.mailgun.com/) (danilo)
 1. favicon
 1. github para carla, para editar arquivos ela mesma
 	1. documentacao de como editar artigos (portugues, ingles)
@@ -40,18 +38,20 @@ Pending
 
 ## Passo a passo de integracoes
 
-1. definir nome
-2. definir e comprar dominio
+1. ~~definir nome~~
+2. ~~definir e comprar dominio~~
 3. criar email principal (mailgun ou gmail)
+3. discutir financiamento coletivo no site (vtek? greenpeace?)
+2. decidir financiamento coletivo no site
 4. integracoes: 
-	- benfeitoria
-	- patreon (buscar isencao)
+	- benfeitoria?
+	- patreon? (buscar isencao)
 	- mailchimp
 	- github
 	- youtube
 	- instagram
 
+## Depois da fase 1
 
-- financiamento coletivo no site
 - sorteio de uma peça por mês a cada tantas assinaturas (tanto valor)
 - venda de produtos
