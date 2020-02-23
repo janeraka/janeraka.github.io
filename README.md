@@ -6,11 +6,14 @@
 2. Clone repo, go to folder on terminal and run `bundle exec make serve`.
 3. When it's running, go to [https://localhost:4000](https://localhost:4000) on your browser.
 
-## Fases
+|---|---|
+|Fases|Descrição|
+|Fase 1|Site em português, com conteúdo e integrações|
+|Fase 2|Site em inglês|
+|Fase 3|Venda de produtos? Discutir|
+|---|---|
 
-1. Site em português, com conteúdo e integrações
-1. Site em inglês
-1. Venda de produtos? Discutir.
+
 
 
 ## Pendências
