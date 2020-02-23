@@ -1,4 +1,6 @@
 @include font-face(monument);
+@include font-face(miratrix);
+@include font-face(rakesly);
 
 body {
 	background-color: $color-orange;
@@ -14,8 +16,7 @@ body {
   	padding: $gap3;
   .content {
   	background-color: $color-orange;
-
-  	padding: $gap2;
+  	padding: $gap2 $gap3;
   }
 }
 
@@ -30,9 +31,12 @@ a:not(.language) {
 	}
 }
 
+p {
+	margin-bottom: $gap2;
+}
+
 
 h1, h2, h3, h4 {
-	font-family: monument;
-	padding: 15px 0;
-	text-transform: uppercase;
+	font-family: rakesly;
+	padding: $gap2 0;
 }

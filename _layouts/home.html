@@ -7,15 +7,16 @@ layout: home
 	<div class="container">
 	<div class="content">
 			{% include header.html %}
-		<article class="main wow">
-			{% if page.languages contains "pt" %}
-			{% include pt/somos.html %}
-			{% include pt/missao.html %}
-			{% else %}
-			{% include en/somos.html %}
-			{% include en/missao.html %}
-			{% endif %}
-			{% include help.html %}
+		<article class="main">
+			<section class="somos wow">
+				{% include somos_pt.html %}
+			</section>
+				<section class="missao wow">
+				{% include missao_pt.html %}
+			</section>
+					<section class="social wow">
+				{% include social.html %}
+			</section>
 		</article>
 		{% include footer.html %}
 	</div>
