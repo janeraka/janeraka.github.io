@@ -5,22 +5,25 @@ layout: home
 {% include head.html %}
 <body>
 	<div class="container">
-	<div class="content">
+		<div class="content">
 			{% include header.html %}
-		<article class="main">
-			<section class="somos wow">
-				{% include somos_pt.html %}
-			</section>
+			<article class="main">
+				<section class="somos wow">
+					{% include somos_pt.html %}
+				</section>
 				<section class="missao wow">
-				{% include missao_pt.html %}
-			</section>
-					<section class="ajuda wow">
-				{% include ajuda_pt.html %}
-			</section>
-	
-		</article>
-		{% include footer.html %}
-	</div>
+					{% include missao_pt.html %}
+				</section>
+				<section class="desafios">
+					{% include desafios_pt.html %}
+				</section>
+				<section class="ajuda wow">
+					{% include ajuda_pt.html %}
+				</section>
+
+			</article>
+			{% include footer.html %}
+		</div>
 	</div>
 	{% include script.html %}
 </body>

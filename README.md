@@ -55,3 +55,23 @@ Pending
 
 - sorteio de uma peça por mês a cada tantas assinaturas (tanto valor)
 - venda de produtos
+
+
+## Pra discutir, conteudo
+
+- parte do conteudo eh em html. parte eh em markdown. desculpa ae.
+- acentos!
+- source of truth
+- links e pdfs
+- imagens
+- reduzir o texto
+- onde o link entra
+- ingles!
+
+## Pra terminar o site
+
+- link no logo, mini logo em paginas secondarias
+- titulo automatico se "article"
+- testar galeria
+- glossario, en/pt, com popovers
+- 
