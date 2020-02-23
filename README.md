@@ -1,4 +1,4 @@
-# Agenda Awaete
+# Janeraka.org
 
 ## Rodando localmente
 
@@ -42,13 +42,12 @@
 	- documentacao de como criar novos artigos (portugues, ingles)
 - criar email principal (mailgun ou gmail)
 - discutir financiamento coletivo no site (vtek? greenpeace?)
-- decidir financiamento coletivo no site
-- integracoes: 
-	- benfeitoria? patreon? vtek? (buscar isencao)
-	- mailchimp
-	- github
-	- youtube
-	- instagram
+- decidir financiamento coletivo no site: benfeitoria? patreon? vtek? (buscar isencao)
+- mailchimp
+- github
+- youtube
+- instagram (stories)
+- CNAME janeraka.org
 
 ### Pendências, Fase 3 em diante
 
