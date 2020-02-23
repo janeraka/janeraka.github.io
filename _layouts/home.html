@@ -5,7 +5,8 @@ layout: home
 {% include head.html %}
 <body>
 	<div class="container">
-		{% include header.html %}
+	<div class="content">
+			{% include header.html %}
 		<article class="main wow">
 			{% if page.languages contains "pt" %}
 			{% include pt/somos.html %}
@@ -17,6 +18,7 @@ layout: home
 			{% include help.html %}
 		</article>
 		{% include footer.html %}
+	</div>
 	</div>
 	{% include script.html %}
 </body>

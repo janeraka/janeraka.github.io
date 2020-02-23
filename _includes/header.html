@@ -4,30 +4,27 @@
 			{% include logos/bg.svg %}
 		</div>
 		<div class="logo">
-
-		
-			<div class="row-1">
-				<div class="marytykwawara">
-					{% include logos/marytykwawara.svg %}
-				</div>
-				{% if page.languages contains "pt" %}
+					{% include logos/janeraka.svg %}
+				{% include switch.html %}
+			
+<!-- 				{% if page.languages contains "pt" %}
 				<a href="#" class="speak" data-toggle="tooltip" title="Aprenda como pronunciar" data-placement="right">
 
 					{% else %}
 					<a href="#" class="speak" data-toggle="tooltip" title="Click to learn how to say it" data-placement="right">
 
 						{% endif %}
-					{% include icons/audio.svg %}</a>
-				</div>
-				<div class="slogan">
+					{% include icons/audio.svg %}</a> -->
+		
+	<!-- 			<div class="slogan">
 					{% if page.languages contains "pt" %}
 					slogan em portugues
 					{% else %}
 					slogan in english
 					{% endif %}
-				</div>
+				</div> -->
 				
-				{% include switch.html %}
+				
 
 			</div>
 		</header>

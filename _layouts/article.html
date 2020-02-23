@@ -6,14 +6,17 @@ layout: article
 <body>
 	<div class="container">
 	
-				{% include header.html %}
-	
-		
-		<article class="main">
+				<div class="content">
+					{% include header.html %}
+							<article class="main">
 	{{ content }}
 
 		</article>
 		{% include footer.html %}
+				</div>
+	
+		
+
 
 	</div>
 	{% include script.html %}
