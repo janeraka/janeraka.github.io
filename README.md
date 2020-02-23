@@ -74,4 +74,4 @@ Pending
 - titulo automatico se "article"
 - testar galeria
 - glossario, en/pt, com popovers
-- 
+- resolver conflitos

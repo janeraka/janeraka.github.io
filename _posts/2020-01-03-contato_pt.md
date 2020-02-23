@@ -11,4 +11,4 @@ permalink: /pt/:slug
 ---
 # Contato
 
-```fale conosco form```
+```fale conosco form: (formulario) nome, pais, email, comentario, rede social (opcional) ```
