@@ -8,6 +8,8 @@ body {
 	color: $color-brown;
 }
 
+
+
 .container {
 	width: 700px;
 	margin: $gap2 auto;
@@ -20,14 +22,17 @@ body {
   }
 }
 
+section:not(:first-of-type), footer.footer {
+border-top: solid 2px $color-brown;
+margin-top: $gap4;
+padding-top: $gap2;
+}
 a:not(.language) {
-	border-bottom: dotted 1px #999;
-	color: #666;
+	color: $color-red;
+	text-decoration: underline !important;
 	@include transition;
 	&:hover {
-		color: $color-red;
-		border-bottom: solid 1px $color-red;
-		text-decoration: none;
+		color: black;
 	}
 }
 
@@ -37,6 +42,6 @@ p {
 
 
 h1, h2, h3, h4 {
-	font-family: rakesly;
+	font-family: monument;
 	padding: $gap2 0;
 }
