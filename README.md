@@ -6,6 +6,12 @@
 2. Clone repo, go to folder on terminal and run `bundle exec make serve`.
 3. When it's running, go to [https://localhost:4000](https://localhost:4000) on your browser.
 
+## Fases
+
+1. Site em português, com conteúdo e integrações
+1. Site em inglês
+1. Venda de produtos? Discutir.
+
 
 ## Pendências
 
@@ -23,8 +29,9 @@
 
 - rever texto, proofreading, editar
 - acentos!
+- montar uma galeria juntos
 - glossario, en/pt, com popovers (exemplos?)
-- versao em ingles, como?
+- versao em ingles, como faz? fase 2?
 - rever links e pdfs
 - onde o link entra
 
@@ -37,14 +44,14 @@
 - discutir financiamento coletivo no site (vtek? greenpeace?)
 - decidir financiamento coletivo no site
 - integracoes: 
-	- benfeitoria?
-	- patreon? (buscar isencao)
+	- benfeitoria? patreon? vtek? (buscar isencao)
 	- mailchimp
 	- github
 	- youtube
 	- instagram
 
-### Pendências, Fase 2 em diante
+### Pendências, Fase 3 em diante
 
 - sorteio de uma peça por mês a cada tantas assinaturas (tanto valor)
 - venda de produtos
+- discutir videos (youtube e instagram)
