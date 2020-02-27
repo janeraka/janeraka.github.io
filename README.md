@@ -13,8 +13,6 @@
 | Fase 3 | Venda de produtos? Discutir                            |
 
 
-
-
 ## Pendências
 
 ### Pendências, Design
@@ -42,8 +40,8 @@
 - github para carla, para editar arquivos ela mesma
 	- documentacao de como editar artigos (portugues, ingles)
 	- documentacao de como criar novos artigos (portugues, ingles)
-- criar email principal (mailgun ou gmail)
-- discutir financiamento coletivo no site (vtek? greenpeace?)
+- ~~criar email principal (mailgun ou gmail)~~
+- ~~discutir financiamento coletivo no site (vtek? greenpeace?)~~
 - decidir financiamento coletivo no site: benfeitoria? patreon? vtek? (buscar isencao)
 - mailchimp
 - github
