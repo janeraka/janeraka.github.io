@@ -1,68 +1,46 @@
-.brand {
 
-		margin: 0 auto;
-		width: 300px;
 
-	.bg {
-		svg path {
-			&:first-of-type, &:nth-of-type(2) {
-				@include fadeInDown($delay: $delay * 3);
-			}
-			&:nth-of-type(3) {
-				@include fadeInUp($delay: $delay * 3);
-			}
-		}
+a.logo {
+	text-transform: uppercase;
+	color: black;
+	text-align: center;
+	h1, h2 {
+		padding-top: $gap;
 	}
-	.logo {
-		position: absolute;
-		top: 40px + $gap7;
-		@include fadeInDown;
+	h1 {
+		font-size: 37px;
 	}
-	
-
-	.language {
-		@include fadeInDown($delay: $delay * 2);
-		padding: 0 30px 5px 30px;
-		align-items: center;
-		color: #999;
-		@include transition;
-		font-size: 12px;
-		font-weight: bold;
-		display: grid;
-		width: auto;
-		margin-top: -6px;
-		grid-template-columns: 30px 1fr;
-		.emoji {
-			font-size: 25px;
-		}
-
-		&:hover {
-			color: #666;
-			text-decoration: none;
-		}
-
+	h2 {
+font-size: 16;
+max-width: 267px;
 	}
-	.row-1 {
-		@include fadeInUp;
-		z-index: 100;
-		background-color: $color-red;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 15px;
-
-	}
-	.speak {
-		@include transition;
-		&:hover {
-			svg path {
-				fill: $color-blue;
-			}
-		}
-	}
-
-
-
 }
 
+header.main {
+background-image: url('/assets/images/DSC_0010.jpg');
+background-size: cover;
+background-position: right bottom;
 
+padding: $gap 0;
+margin-bottom: $gap3;
+.container {
+  display: flex;
+  	height: 350px;
+  	align-items: flex-end;
+  	justify-content: right;
+  	a.logo {
+	color: white;
+	&, & svg path {
+		@include transition;
+	}
+&:hover {
+	color: orange;
+	text-decoration: none;
+	svg path {
+		fill: orange;
+	}
+}
+}
+}
 
+}

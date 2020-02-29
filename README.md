@@ -17,31 +17,27 @@
 
 ### Pendências, Design
 
--  link no logo, mini logo em paginas secondarias
--  titulo automatico se "article"
--  testar galeria
--  favicon
--  tiers de monthly subscription
--  [share API](https://css-tricks.com/how-to-use-the-web-share-api/)
-- ~~resolver conflitos~~
-
-### Pendências, Conteúdo
-
-- rever texto, proofreading, editar
-- acentos!
-- montar uma galeria juntos
-- glossario, en/pt, com popovers (exemplos?)
+- link no logo, mini logo em paginas secondarias
+- titulo automatico se "article"
+- testar galeria (bleed)
+- article layout
+- favicon
+- tiers de monthly subscription
+- [share API](https://css-tricks.com/how-to-use-the-web-share-api/)
+- footer
+- parse map
+- versao mobile
+- make wow work
+- main menu: some loop for all non-draft articles
+- 404
 - versao em ingles, como faz? fase 2?
 - rever links e pdfs
-- onde o link entra
 
 ### Pendências, Integrações
 
 - github para carla, para editar arquivos ela mesma
 	- documentacao de como editar artigos (portugues, ingles)
 	- documentacao de como criar novos artigos (portugues, ingles)
-- ~~criar email principal (mailgun ou gmail)~~
-- ~~discutir financiamento coletivo no site (vtek? greenpeace?)~~
 - decidir financiamento coletivo no site: benfeitoria? patreon? vtek? (buscar isencao)
 - mailchimp
 - github
@@ -54,3 +50,4 @@
 - sorteio de uma peça por mês a cada tantas assinaturas (tanto valor)
 - venda de produtos
 - discutir videos (youtube e instagram)
+- glossario, en/pt, com popovers (exemplos?)
