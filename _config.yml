@@ -1,11 +1,12 @@
-title: janeraka
-email: info@nicholasfrota.com
+title: jekyll-template
+email: your email here
 description: >- # this means to ignore newlines until "baseurl:"
-  aaa
+  Lorem Ipsum
 baseurl: ''
-url: 'https://janeraka.github.io/'
-twitter_username: nonlinear
-github_username: nonlinear
+basecolor: '#000000' # for browser settings
+url: ''
+twitter_username: 
+github_username: 
 
 sass:
   load_paths:

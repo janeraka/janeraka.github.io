@@ -6,11 +6,11 @@
 	<link rel="icon" type="image/png" sizes="16x16"
 		href="{{'/assets/favicons/favicon-16x16.png' | prepend: site.baseurl}}">
 	<link rel="manifest" href="{{'/assets/favicons/site.webmanifest' | prepend: site.baseurl}}">
-	<link rel="mask-icon" href="{{'/assets/favicons/safari-pinned-tab.svg" color="#800080">
+	<link rel="mask-icon" href="{{'/assets/favicons/safari-pinned-tab.svg" color="{{site.basecolor}}">
 	<link rel="shortcut icon" href="{{'/assets/favicons/favicon.ico' | prepend: site.baseurl}}">
-	<meta name="msapplication-TileColor" content="#800080">
+	<meta name="msapplication-TileColor" content="{{site.basecolor}}">
 	<meta name="msapplication-config" content="{{'/assets/favicons/browserconfig.xml' | prepend: site.baseurl}}">
-	<meta name="theme-color" content="#800080">
+	<meta name="theme-color" content="{{site.basecolor}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{%- if page.title -%}
 	<title>{{ page.title }}</title>
