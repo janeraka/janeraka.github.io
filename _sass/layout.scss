@@ -1,0 +1,47 @@
+@include font-face(monument);
+@include font-face(miratrix);
+@include font-face(rakesly);
+
+body {
+	background-color: $color-orange;
+	padding: 0;
+	color: $color-brown;
+}
+
+
+
+.container {
+	width: 700px;
+	margin: $gap2 auto;
+  background-image: url(images/pattern.svg);
+
+  	padding: $gap3;
+  .content {
+  	background-color: $color-orange;
+  	padding: $gap2 $gap3;
+  }
+}
+
+section:not(:first-of-type), footer.footer {
+border-top: solid 2px $color-brown;
+margin-top: $gap4;
+padding-top: $gap2;
+}
+a:not(.language) {
+	color: $color-red;
+	text-decoration: underline !important;
+	@include transition;
+	&:hover {
+		color: black;
+	}
+}
+
+p {
+	margin-bottom: $gap2;
+}
+
+
+h1, h2, h3, h4 {
+	font-family: monument;
+	padding: $gap2 0;
+}
