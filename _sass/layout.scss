@@ -4,7 +4,7 @@ h1, h2, h3 {
 	font-family: monument;
 }
 
-section:not(:last-of-type):after {
+section:after {
 	content: "";
 	display: block;
 	height: $gap;
