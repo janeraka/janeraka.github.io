@@ -9,12 +9,7 @@
 			<h2>Subscribe to our newsletter</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit consectetur, laborum rem laudantium enim quod neque, repellendus qui magni.</p>
 			{% endif %}
-							{% if page.languages contains "pt" %}
-					<div class="indicates-required">* = obrigatório</div>
-					{% else %}
-				<div class="indicates-required">* = required</div>
-					</label>
-					{% endif %}
+							
 			<article class="form">
 				<section>
 			
@@ -314,6 +309,12 @@
 				<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 
 				{% endif %}
+				{% if page.languages contains "pt" %}
+					<div class="indicates-required">* = obrigatório</div>
+					{% else %}
+				<div class="indicates-required">* = required</div>
+					</label>
+					{% endif %}
 			</section>
 		</article>
 

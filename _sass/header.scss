@@ -1,46 +1,20 @@
 
 
-a.logo {
-	text-transform: uppercase;
-	color: black;
-	text-align: center;
-	h1, h2 {
-		padding-top: $gap;
-	}
-	h1 {
-		font-size: 37px;
-	}
-	h2 {
-font-size: 16;
-max-width: 267px;
-	}
-}
+
 
 header.main {
-background-image: url('/assets/images/header.jpg');
-background-size: cover;
-background-position: right bottom;
+	background-image: url('/assets/images/header.jpg');
+	background-size: cover;
+	background-position: right bottom;
 
-padding: $gap 0;
-margin-bottom: $gap3;
-.container {
-  display: flex;
-  	height: 350px;
-  	align-items: flex-end;
-  	justify-content: right;
-  	a.logo {
-	color: white;
-	&, & svg path {
-		@include transition;
+	padding: $gap 0;
+	margin-bottom: $gap3;
+	.container {
+		display: flex;
+		height: 350px;
+		align-items: flex-end;
+		justify-content: right;
+
 	}
-&:hover {
-	color: $color-orange;
-	text-decoration: none;
-	svg path {
-		fill: $color-orange;
-	}
-}
-}
-}
 
 }

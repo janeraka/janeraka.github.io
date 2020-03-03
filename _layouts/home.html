@@ -4,55 +4,113 @@ layout: home
 <html>
 {% include head.html %}
 <body>
-<header class="main">
-	<div class="container">
-		<a href="/" class="logo">
-			{% include logos/grid.svg %}
-			<h1>{{ site.title }}</h1>
-			{% include logos/divider-1.svg %}
-			<h2>{{ site.description-pt }}</h2></a>
-	</div>
-</header>
-<article>
+	<header class="main">
+		<div class="container">
+			<a href="/" class="logo">
+				{% include logos/grid.svg %}
+				<h1>{{ site.title }}</h1>
+				{% include logos/divider-1.svg %}
+				<h2>{{ site.description-pt }}</h2></a>
+			</div>
+		</header>
+		<article>
+
+
+			<section class="container wow">
+				{% if page.languages contains "pt" %}
+				{% include acolhimento_pt.html %}
+				{% else %}
+				{% include acolhimento_en.html %}
+				{% endif %}
+			</section>
+			<ul class="gallery wow">
+				<li style="background-image: url(/assets/images/indd/pos-31-g.jpg)">
+					<div class="container">
+						<h2>Acolhimento</h2>
+					</div>
+				</li>
+			</ul>
+			<section class="container wow">
+				{% if page.languages contains "pt" %}
+				{% include quemsomos_pt.html %}
+				{% else %}
+				{% include quemsomos_en.html %}
+				{% endif %}
+			</section>
+
+			<ul class="gallery wow">
+				<li class="medium"  style="background-image: url(/assets/images/IMG_0563.jpg)"></li>
+				<li style="background-image: url(/assets/images/2020-02-09-18-08-59-791.jpg)"></li>
+				<li style="background-image: url(/assets/images/DSC_0034.JPG)"></li>
+				<li  class="medium" style="background-image: url(/assets/images/IMG-20200122-WA0003.jpg)"></li>
+			</ul>
+
+			<section class="container wow">
+				{% if page.languages contains "pt" %}
+				{% include missao_pt.html %}
+				{% else %}
+				{% include missao_en.html %}
+				{% endif %}
+			</section>
+			<ul class="gallery wow">
+				<li class="medium" style="background-image: url(/assets/images/20191128_195515.jpg)"></li>
+				<li class="stretch" style="background-image: url(/assets/images/20191128_182723.jpg)"></li>
+				<li class="large" style="background-image: url(/assets/images/20200209_173239.jpg)"></li>
+				<li style="background-image: url(/assets/images/indd/IMG-20190918-WA0036.jpg)"></li>
+
+			</ul>
+			<section class="container wow">
+				{% if page.languages contains "pt" %}
+				{% include desafios_pt.html %}
+				{% else %}
+				{% include desafios_en.html %}
+				{% endif %}
+			</section>
+			<ul class="gallery wow">
+				<li style="background-image: url(/assets/images/17637146_1248921248489393_5106831334969581127_o.jpg)">
+					<div class="container">
+						<h2>Povos em Trânsito</h2>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="gallery wow">
+				<li style="background-image: url(/assets/images/IMG_20200104_102614_566.jpg)">
+					<div class="container">
+						<h2>Residência Artística</h2>
+					</div>
+				</li>
+			</ul>
+
+			<section class="container wow">
+				{% if page.languages contains "pt" %}
+				{% include troca_pt.html %}
+				{% else %}
+				{% include troca_en.html %}
+				{% endif %}
+			</section>
+			<ul class="gallery wow">
+				<li class="large" style="background-image: url(/assets/images/IMG-20191031-WA0029.jpeg)"></li>
+				<li class="medium" style="background-image: url(/assets/images/20191130_191212.jpg)"></li>
+				<li style="background-image: url(/assets/images/20191222_110455.jpg)"></li>
+				<li class="medium" style="background-image: url(/assets/images/IMG_20200128_163044_112.jpg)"></li>
+			</ul>
 
 
 
-<section class="wow container">
-	<h1>Acolher para ser acolhido. ser acolhido para acolher!</h1>
-<p>Quem já teve oportunidade de visitar os interiores, suas comunidades e aldeias, com certeza já experientou do acolhimento desses povos que são conhecidos por sua hospitalidade. O que em muitos casos garante não só nosso conforto mas principalmente a nossa sobrevivência, dependendo do território. Mas e quando precisam vir à cidade? Como essa relação de contato se dá? Onde ficam e como são assistidos nossos povos originários quando necessitam se deslocar da floresta para à cidade, em busca de acesso a serviços de cidadania e muitas vezes até sáude? Nossos povos continuam sendo traumatizados por um contato nocivo que pode ser transformado aqui e agora.</p>
-<p>Pensando nisso, Time’i Assurini, Carla Romano e Sebastian Drude, no final de 2019, criam Janeraka Belém e iniciam a busca de conexões e parceiros, constelando a estrutura necessária para um melhor acolhimento para os povos da cidade à floresta.</p>
-</section>
-<ul class="gallery">
-	<li class="full" style="background-image: url(/assets/images/indd/pos-31-g.jpg)"></li>
-</ul>
-<section class="wow container">
-<h1>Trocas de saberes e práticas</h1>
-<p>É possível saber algo e não praticar. E praticar e não saber. Pensando nisso, Timeí Assurini, indígena de etnia de recente contato, se une à Carla Romano e inicia um processo diferente e reflexivo de “Descobrimento do Brasil”. Após 5 anos de mais de 300 atividades pelo Brasil, o projeto “Agenda Awaete - Trocas de Saberes e Práticas” retorna ao Pará.</p>
-<p>A ideia é trazer para a capital oportunidades e experiências de novas formas de contato e diálogo, a partir da convivência com culturas e seus povos. Constituindo ambientes e linguagens mais empaticas e acolhedoras.</p>
-</section>
-<ul class="gallery">
-	<li class="medium" style="background-image: url(/assets/images/indd/20191128_195515.jpg)"></li>
-	<li class="medium" style="background-image: url(/assets/images/indd/20191128_182723.jpg)"></li>
-	<li class="large" style="background-image: url(/assets/images/indd/20200209_173239.jpg)"></li>
-	<li style="background-image: url(/assets/images/indd/IMG-20190918-WA0036.jpg)"></li>
 
-</ul>
 
-<ul class="gallery">
-	<li class="large" style="background-image: url(/assets/images/IMG-20191031-WA0029.jpeg)"></li>
-	<li class="medium" style="background-image: url(/assets/images/20191130_191212.jpg)"></li>
-	<li style="background-image: url(/assets/images/20191222_110455.jpg)"></li>
-	<li class="medium" style="background-image: url(/assets/images/IMG_20200128_163044_112.jpg)"></li>
-</ul>
-<section class="wow container">
-	<h1>Como Ajudar</h1>
-	
-	
-	{% include newsletter.html %}
-</article>
-<footer class="footer container">
-<tt>footer, pending</tt>
-</footer>
-	{% include script.html %}
-</body>
-</html>
+
+
+
+
+			<section class="wow container">
+				<h1>Como Ajudar</h1>
+
+
+				{% include newsletter.html %}
+			</article>
+			{% include footer.html %}
+			{% include script.html %}
+		</body>
+		</html>

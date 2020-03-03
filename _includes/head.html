@@ -13,11 +13,17 @@
 	<meta name="theme-color" content="{{site.basecolor}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{%- if page.title -%}
-	<title>{{ page.title }}</title>
-	<meta name=" title" content={{ page.title }}>
+	<title>{{ site.title }} - {{ page.title }}</title>
+	<meta name=" title" content={{ site.title }} - {{ page.title }}>
+		{% else %}
+	<title>{{ site.title }}</title>
+	<meta name=" title" content={{ site.title }}>
 	{%- endif -%}
 	{%if page.description %}
 	<meta name="description" content="{{ page.description }}">
+
+		{% else %}
+		<meta name="description" content="{{ site.description }}">
 	{% endif %}
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">

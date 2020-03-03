@@ -1,6 +1,8 @@
 .indicates-required {
-	font-size: 12px;
+	font-size: 13px;
 	color: #666;
+	float: right;
+	margin-top: -$gap3;
 }
 
 article.form {
@@ -25,8 +27,26 @@ displaY: block;
 			border-color: #666;
 		}
 	}
-	input[type=submit] {
+
+
+	.btn, input[type=submit]  {
+		padding: $gaphalf $gap2;
+		background-color:  $color-orange;
+		color: $color-brown;
+		@include transition;
+		border: none;
+		text-decoration: none;
+		border-radius: 0;
 			font-family: monument;
 	text-transform: uppercase;
-		color: $color-brown;	
+		@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.05));
+		& ~ & {
+margin-top: $gap;
+		}	
+		&:hover {
+				@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.15));
+			background-color:  $color-red;
+			color: white;
+
+		}
 	}

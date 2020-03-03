@@ -8,24 +8,62 @@ body {
 h1, h2, h3 {
 	font-family: monument;
 	text-transform: uppercase;
+
+		color: $color-brown;	
+}
+
+a {
+	color: $color-brown;
+	text-decoration: underline;
+	
+				@include transition;
+&:hover {
+	color: $color-red;
+}
+
+&.logo {
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+
+		&, & svg path {
+				@include transition;
+				fill: white;
+			}
+	h1, h2 {
+		padding-top: $gap;
+		color: white;
+	}
+	h1 {
+		font-size: 37px;
+	}
+	h2 {
+		font-size: 16;
+		max-width: 267px;
+	}
+	&:hover {
+				color: $color-orange;
+				text-decoration: none;
+				svg path {
+					fill: $color-orange;
+				}
+			}
+}
 }
 
 section {
 	h1, h2, h3 {
-		color: $color-brown;	
 		margin-bottom: $gap2;
 		padding-right: $gap5;
 }
-// 	&:not(:last-of-type):after {
-// 	content: "";
-// 	display: block;
-// 	height: $gap;
-// 	margin: $gap3 $gap6;
-// 	background-image: url('/assets/images/divider.svg');
-// 	background-repeat: repeat-x;
-// }
-}
 
+}
+	.divider {
+	height: $gap;
+	background-image: url('/assets/images/divider.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 .container {
 	max-width: 700px;
 }
