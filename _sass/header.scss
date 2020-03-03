@@ -3,7 +3,7 @@
 
 
 header.main {
-	background-image: url('/assets/images/header.jpg');
+	background-image: url('/assets/images/header-mirror.jpg');
 	background-size: cover;
 	background-position: right bottom;
 
@@ -13,7 +13,7 @@ header.main {
 		display: flex;
 		height: 350px;
 		align-items: flex-end;
-		justify-content: right;
+		justify-content: left;
 
 	}
 
