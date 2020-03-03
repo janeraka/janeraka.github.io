@@ -2,6 +2,7 @@
 
 body {
 	font-size: 16px;
+	// background-color: $color-orange;
 }
 
 h1, h2, h3 {
@@ -11,12 +12,10 @@ h1, h2, h3 {
 
 section {
 	h1, h2, h3 {
-		// background-color: $color-orange;
+		color: $color-brown;	
 		margin-bottom: $gap2;
-		color: $color-brown;
-		// padding: $gap2;
 		padding-right: $gap5;
-	}
+}
 // 	&:not(:last-of-type):after {
 // 	content: "";
 // 	display: block;
