@@ -34,10 +34,10 @@ margin-bottom: $gap3;
 		@include transition;
 	}
 &:hover {
-	color: orange;
+	color: $color-orange;
 	text-decoration: none;
 	svg path {
-		fill: orange;
+		fill: $color-orange;
 	}
 }
 }

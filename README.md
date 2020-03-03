@@ -19,7 +19,7 @@
 
 - link no logo, mini logo em paginas secondarias
 - titulo automatico se "article"
-- testar galeria (bleed)
+- testar galeria (grid)
 - article layout
 - favicon
 - tiers de monthly subscription

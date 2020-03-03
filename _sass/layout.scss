@@ -1,16 +1,30 @@
 @include font-face(monument);
 
-h1, h2, h3 {
-	font-family: monument;
+body {
+	font-size: 16px;
 }
 
-section:after {
-	content: "";
-	display: block;
-	height: $gap;
-	margin: $gap3 $gap6;
-	background-image: url('/assets/images/divider.svg');
-	background-repeat: repeat-x;
+h1, h2, h3 {
+	font-family: monument;
+	text-transform: uppercase;
+}
+
+section {
+	h1, h2, h3 {
+		// background-color: $color-orange;
+		margin-bottom: $gap2;
+		color: $color-brown;
+		// padding: $gap2;
+		padding-right: $gap5;
+	}
+// 	&:not(:last-of-type):after {
+// 	content: "";
+// 	display: block;
+// 	height: $gap;
+// 	margin: $gap3 $gap6;
+// 	background-image: url('/assets/images/divider.svg');
+// 	background-repeat: repeat-x;
+// }
 }
 
 .container {

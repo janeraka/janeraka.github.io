@@ -1,0 +1,49 @@
+
+
+.gallery {
+  display: grid;
+  @include reset(list);
+  padding: $gap2 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 300px;
+  grid-auto-flow: row dense;
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    background-size: cover;
+    background-position: center;
+
+    &:nth-of-type(3n-2) {
+      background-color: #eee;
+    }
+    &:nth-of-type(3n-1) {
+      background-color: #ccc;
+    }
+    &:nth-of-type(3n) {
+      background-color: #999;
+    }
+
+    &.medium {
+      grid-row-end: span 2;
+    }
+
+    &.large {
+      grid-row-end: span 3;
+    }
+
+    &.full {
+      grid-column-end: auto;
+
+      @media screen and (min-width: 768px) {
+        grid-column: 1/-1;
+        grid-row-end: span 2;
+      }
+    }
+  }
+}
+
