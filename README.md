@@ -17,15 +17,10 @@
 
 ### Pendências, Design
 
-- link no logo, mini logo em paginas secondarias
-- titulo automatico se "article"
+
 - testar galeria (grid)
-- article layout
 - favicon
 - tiers de monthly subscription
-- [share API](https://css-tricks.com/how-to-use-the-web-share-api/)
-- footer
-- parse map
 - versao mobile
 - make wow work
 - main menu: some loop for all non-draft articles
@@ -44,6 +39,14 @@
 - youtube
 - instagram (stories)
 - CNAME janeraka.org
+
+### Fase 2
+
+- páginas periféricas
+- link no logo, mini logo em paginas secondarias
+- titulo automatico se "article"
+- article layout
+- [share API](https://css-tricks.com/how-to-use-the-web-share-api/)
 
 ### Pendências, Fase 3 em diante
 
