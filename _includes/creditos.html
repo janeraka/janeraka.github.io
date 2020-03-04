@@ -1,0 +1,14 @@
+<h3>Créditos</h3>
+
+{% for member in site.data.team %}
+ 
+     	<p><strong>{{ member.name }}:</strong>  {% if page.languages contains "pt" %}
+				{{ member.role.pt }}
+				{% else %}
+				{{ member.role.en }}
+				{% endif %}
+				<br>
+				{% for group in member.social %}
+<a href="{{ group.url }}" target="{{ group.name }}">{{ group.name }}</a>{% if forloop.last == false %},{% endif %}{% endfor %}.</p>
+     
+{% endfor %}

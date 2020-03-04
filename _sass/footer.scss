@@ -7,4 +7,27 @@ footer.footer {
 			margin-left: $gap;
 		}
 	}
+
+}
+
+$avatar: 50px;
+
+.team {
+	.item {
+		display: grid !important;
+		grid-gap: $gap;
+		grid-template-columns: $avatar 1fr;
+		.avatar {
+			background-size: cover;
+			height: $avatar;
+			width: $avatar;
+			@include radius(50%);
+		}
+	}
+	
+}
+
+.collapse {
+	margin-bottom: $gap;
+
 }

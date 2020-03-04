@@ -8,15 +8,12 @@
  	<a href="/pt/imprensa">Imprensa</a>
  	<a href="/pt/contato">Contato</a> -->
 
-<div class="menu"> 	<a href="#" data-toggle="collapse" data-target="#imprensa" aria-expanded="true" aria-controls="imprensa">
- 		Imprensa
- 	</a>
- 	<a href="#" data-toggle="collapse" data-target="#contato" aria-expanded="false" aria-controls="contato">
- 		Contato
- 	</a>
- 	<a href="#" data-toggle="collapse" data-target="#creditos" aria-expanded="false" aria-controls="creditos">
- 		Creditos
- 	</a></div>
+
+ 	<div class="menu">
+ 		<a href="#" data-toggle="collapse" data-target="#imprensa" aria-expanded="true" aria-controls="imprensa">Imprensa</a>
+ 		<a href="#" data-toggle="collapse" data-target="#contato" aria-expanded="false" aria-controls="contato">Contato</a>
+ 		<a href="#" data-toggle="collapse" data-target="#creditos" aria-expanded="false" aria-controls="creditos">Créditos</a>
+ 	</div>
  	<div class="accordion" id="footer">
  		<div id="imprensa" class="collapse" aria-labelledby="headingOne" data-parent="#footer">
  			<h3>Imprensa</h3>
@@ -27,8 +24,7 @@
  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veritatis laudantium, aperiam aspernatur nisi esse molestiae alias natus velit neque.</p>
  		</div>
  		<div id="creditos" class="collapse" aria-labelledby="headingThree" data-parent="#footer">
- 			<h3>Créditos</h3>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quasi, omnis. Nesciunt facilis similique optio maiores et labore debitis ratione.</p>
+ 			{% include creditos.html %}
  		</div>
  	</div>
  </div>

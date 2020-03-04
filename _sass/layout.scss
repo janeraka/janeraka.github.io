@@ -13,7 +13,7 @@ body {
 	// background-color: $color-orange;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: monument;
 	text-transform: uppercase;
 
@@ -63,7 +63,7 @@ a {
 }
 
 section {
-	h1, h2, h3 {
+	h1, h2, h3, h4 {
 		margin-bottom: $gap2;
 		padding-right: $gap5;
 }
