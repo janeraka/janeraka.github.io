@@ -16,7 +16,7 @@ layout: home
 		<article>
 
 
-			<section class="wow container">
+<!-- 			<section class="wow container">
 				{% if page.languages contains "pt" %}
 				{% include acolhimento_pt.html %}
 				{% else %}
@@ -29,13 +29,15 @@ layout: home
 						<h2>Acolhimento</h2>
 					</div>
 				</li>
-			</ul>
+			</ul> -->
 			<section class="wow container">
 				{% if page.languages contains "pt" %}
 				{% include quemsomos_pt.html %}
 				{% else %}
 				{% include quemsomos_en.html %}
 				{% endif %}
+				<a href="/assets/pdf/agenda-awaete.pdf" class="btn" target="_blank">Agenda Awaete (PDF)</a>
+<a href="/assets/pdf/janeraka-belem.pdf" class="btn" target="_blank">Mapas Janeraka Belém (PDF)</a>
 			</section>
 
 			<ul class="wow gallery">
@@ -66,14 +68,14 @@ layout: home
 				{% include desafios_en.html %}
 				{% endif %}
 			</section>
-			<ul class="wow gallery">
+<!-- 			<ul class="wow gallery">
 				<li style="background-image: url(/assets/images/17637146_1248921248489393_5106831334969581127_o.jpg)">
 					<div class="container">
 						<h2>Povos em Trânsito</h2>
 					</div>
 				</li>
-			</ul>
-
+			</ul> -->
+<!-- 
 			<ul class="wow gallery">
 				<li style="background-image: url(/assets/images/IMG_20200104_102614_566.jpg)">
 					<div class="container">
@@ -88,7 +90,7 @@ layout: home
 				{% else %}
 				{% include troca_en.html %}
 				{% endif %}
-			</section>
+			</section> -->
 			<ul class="wow gallery">
 				<li class="large" style="background-image: url(/assets/images/IMG-20191031-WA0029.jpeg)"></li>
 				<li class="medium" style="background-image: url(/assets/images/20191130_191212.jpg)"></li>
@@ -107,6 +109,7 @@ layout: home
 			<section class="wow container">
 				<h1>Como Ajudar</h1>
 
+				{% include doacao_pt.html %}
 
 				{% include newsletter.html %}
 			</article>
