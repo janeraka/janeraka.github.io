@@ -1,3 +1,10 @@
 footer.footer {
-	padding: $gap2 0;
+
+	.menu {
+		padding: $gap;
+		text-align: center;
+		a:not(:first-of-type) {
+			margin-left: $gap;
+		}
+	}
 }

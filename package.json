@@ -29,7 +29,6 @@
     "morgan": ">=1.9.1",
     "negotiator": ">=0.6.1",
     "popper.js": "^1.15.0",
-    "rallax.js": "^2.0.4",
     "set-value": ">=2.0.1",
     "tar": ">=2.2.2",
     "tile": "github:praxisnyc/tile",
