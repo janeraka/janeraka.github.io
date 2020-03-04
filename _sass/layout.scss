@@ -1,5 +1,13 @@
 @include font-face(monument);
 
+.wow {
+  // @include fade(0, 50px, 0, $delay: 100ms);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-size: 16px;
 	// background-color: $color-orange;
