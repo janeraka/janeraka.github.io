@@ -9,13 +9,12 @@ header.main {
 
 	padding: $gap 0;
 	margin-bottom: $gap3;
-	display: flex;
+	background-color: #eee;
 	.container {
-		display: flex;
-		align-items: flex-end;
-		justify-content: right;
+		text-align: right;
 		a.logo {
-			margin-top: 150px;
+			display: inline-block;
+			margin-top: 80px;
 			&.small {
 				margin-top: 0;
 			}

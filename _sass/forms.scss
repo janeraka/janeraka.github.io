@@ -36,9 +36,6 @@ select, input {
 	font-family: monument;
 	text-transform: uppercase;
 	@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.05));
-	& ~ & {
-		margin-top: $gap;
-	}	
 	&:hover {
 		@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.15));
 		background-color:  $color-red;

@@ -20,10 +20,8 @@
 
 
 - favicon
-- mobile (form, "obrigatório")
+- mobile
 - make wow work
-- 404
-- versao em ingles, como faz? fase 2?
 
 ### Pendências, Integrações
 
