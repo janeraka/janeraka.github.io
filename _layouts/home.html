@@ -10,18 +10,20 @@ layout: home
 				{% include logos/grid.svg %}
 				<h1>{{ site.title }}</h1>
 				{% include logos/divider-1.svg %}
-				<h2>{{ site.description-pt }}</h2></a>
-			</div>
-		</header>
-		<article>
+				{% if page.languages contains "pt" %}
+				<h2>{{ site.description.pt }}</h2>
+				{% else %}
+				<h2>{{ site.description.en }}</h2>
+				{% endif %}
+
+			</a>
+		</div>
+	</header>
+	<article>
 
 
 <!-- 			<section class="wow container">
-				{% if page.languages contains "pt" %}
-				{% include acolhimento_pt.html %}
-				{% else %}
-				{% include acolhimento_en.html %}
-				{% endif %}
+				{% include acolhimento.html %}
 			</section>
 			<ul class="wow gallery">
 				<li style="background-image: url(/assets/images/indd/pos-31-g.jpg)">
@@ -31,13 +33,9 @@ layout: home
 				</li>
 			</ul> -->
 			<section class="wow container">
-				{% if page.languages contains "pt" %}
-				{% include quemsomos_pt.html %}
-				{% else %}
-				{% include quemsomos_en.html %}
-				{% endif %}
+				{% include quemsomos.html %}
 				<a href="/assets/pdf/agenda-awaete.pdf" class="btn" target="_blank">Agenda Awaete (PDF)</a>
-<a href="/assets/pdf/janeraka-belem.pdf" class="btn" target="_blank">Mapas Janeraka Belém (PDF)</a>
+				<a href="/assets/pdf/janeraka-belem.pdf" class="btn" target="_blank">Janeraka Belém (PDF)</a>
 			</section>
 
 			<ul class="wow gallery">
@@ -48,11 +46,7 @@ layout: home
 			</ul>
 
 			<section class="wow container">
-				{% if page.languages contains "pt" %}
-				{% include missao_pt.html %}
-				{% else %}
-				{% include missao_en.html %}
-				{% endif %}
+				{% include missao.html %}
 			</section>
 			<ul class="wow gallery">
 				<li class="medium" style="background-image: url(/assets/images/20191128_195515.jpg)"></li>
@@ -62,11 +56,7 @@ layout: home
 
 			</ul>
 			<section class="wow container">
-				{% if page.languages contains "pt" %}
-				{% include desafios_pt.html %}
-				{% else %}
-				{% include desafios_en.html %}
-				{% endif %}
+				{% include desafios.html %}
 			</section>
 <!-- 			<ul class="wow gallery">
 				<li style="background-image: url(/assets/images/17637146_1248921248489393_5106831334969581127_o.jpg)">
@@ -85,11 +75,7 @@ layout: home
 			</ul>
 
 			<section class="wow container">
-				{% if page.languages contains "pt" %}
-				{% include troca_pt.html %}
-				{% else %}
-				{% include troca_en.html %}
-				{% endif %}
+				{% include troca.html %}
 			</section> -->
 			<ul class="wow gallery">
 				<li class="large" style="background-image: url(/assets/images/2020-02-09-18-26-50-644.jpg)"></li>
@@ -97,21 +83,8 @@ layout: home
 				<li style="background-image: url(/assets/images/20191222_110455.jpg)"></li>
 				<li class="medium" style="background-image: url(/assets/images/IMG_20200128_163044_112.jpg)"></li>
 			</ul>
-
-
-
-
-
-
-
-
-
 			<section class="wow container">
-				<h1>Como Ajudar</h1>
-
-				{% include doacao_pt.html %}
-
-				{% include newsletter.html %}
+				{% include ajuda.html %}
 			</article>
 			{% include footer.html %}
 			{% include script.html %}

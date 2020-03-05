@@ -1,4 +1,4 @@
-
+	{% if page.languages contains "pt" %}
 	<h1>Desafios da Amazônia</h1>
 
 	<p>Assim como outros povos originários da Amazônia, os Assurinis lutam contra invasões violentas de suas terras, incentivadas por interesses extrativistas e a conivência do governo Brasileiro.</p>
@@ -16,3 +16,6 @@
 	<p>Ao mesmo tempo, sua cultura e conhecimentos tradicionais tem sofrido com assedio e deturpação por parte de grupos religiosos e acadêmicos, o que fragiliza sua estrutura social e fortalece os constantes ataques.</p>
 
 	<p>Todos esses fenomenos são resquícios do colonialismo que ainda tentar reinar sob a Amazônia e seus povos e que ecoa atraves da narrativa do antropoceno.</p>
+				{% else %}
+			<tt>_includes/desafios.html</tt>
+				{% endif %}
