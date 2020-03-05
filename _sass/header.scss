@@ -9,12 +9,17 @@ header.main {
 
 	padding: $gap 0;
 	margin-bottom: $gap3;
+	display: flex;
 	.container {
 		display: flex;
-		height: 350px;
 		align-items: flex-end;
 		justify-content: right;
-
+		a.logo {
+			margin-top: 150px;
+			&.small {
+				margin-top: 0;
+			}
+		}
 	}
 
 }

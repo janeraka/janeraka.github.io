@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<html>
+{% include head.html %}
+<body>
+	<header class="main">
+		<div class="container">
+		{% include logo.html %}
+		</div>
+	</header>
+	<article>
+		{{ content }}
+	</article>
+	{% include footer.html %}
+	{% include script.html %}
+</body>
+</html>

@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -17,60 +17,69 @@ h1, h2, h3, h4 {
 	font-family: monument;
 	text-transform: uppercase;
 
-		color: $color-brown;	
+	color: $color-brown;	
 }
 
 a {
 	color: $color-brown;
 	text-decoration: underline;
 	
-				@include transition;
-&:hover {
-	color: $color-red;
-}
-
-&.logo {
-	text-transform: uppercase;
-	text-align: center;
-	text-decoration: none;
-
-		&, & svg path {
-				@include transition;
-				fill: white;
-			}
-	h1, h2 {
-		padding-top: $gap;
-		color: white;
-		@include transition;
-	}
-	h1 {
-		font-size: 37px;
-	}
-	h2 {
-		font-size: 16;
-		max-width: 267px;
-	}
+	@include transition;
 	&:hover {
-				color: $color-orange;
-				text-decoration: none;
-				svg path {
-					fill: $color-orange;
-				}
-				h1, h2 {
-		color: $color-orange;
+		color: $color-red;
 	}
+
+	&.logo {
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		&, & svg path {
+			@include transition;
+			fill: white;
+		}
+		h1, h2 {
+			padding-top: $gap;
+			color: white;
+			@include transition;
+		}
+		h1 {
+			font-size: 37px;
+		}
+		h2 {
+			font-size: 16;
+			max-width: 267px;
+		}
+		&:hover {
+			color: $color-orange;
+			text-decoration: none;
+			svg path {
+				fill: $color-orange;
 			}
+			h1, h2 {
+				color: $color-orange;
+			}
+		}
+		&.small {
+			& svg {
+			width: 220px;
+		}
+			h1 {
+				font-size: 30px;
+				padding-top: 0; 
+			}
+		}
+	}
 }
-}
+
 
 section {
 	h1, h2, h3, h4 {
 		margin-bottom: $gap2;
 		padding-right: $gap5;
-}
+	}
 
 }
-	.divider {
+.divider {
 	height: $gap;
 	background-image: url('/assets/images/divider.svg');
 	background-repeat: no-repeat;
@@ -78,4 +87,7 @@ section {
 }
 .container {
 	max-width: 700px;
+	&.error {
+		margin-bottom: $gap3;
+	}
 }

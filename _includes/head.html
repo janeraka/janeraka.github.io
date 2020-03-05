@@ -23,7 +23,12 @@
 	<meta name="description" content="{{ page.description }}">
 
 		{% else %}
-		<meta name="description" content="{{ site.description }}">
+		{% if page.languages contains "pt" %}
+				<meta name="description" content="{{ site.description.pt }}">
+				{% else %}
+				<meta name="description" content="{{ site.description.en }}">
+				{% endif %}
+		
 	{% endif %}
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
