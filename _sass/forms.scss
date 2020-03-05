@@ -10,43 +10,39 @@ article.form {
 	padding: $gap 0;
 	grid-gap: $gap;
 	grid-template-columns: repeat(2, 1fr);
-	label {
-displaY: block;
-	}
-
 }
 
-	select, input {
-		border: solid 1px #999;
-		padding: $gaphalf $gap;
-		&:not([type=submit]) {
+select, input {
+	border: solid 1px #999;
+	padding: $gaphalf $gap;
+	&:not([type=submit]) {
 		width: 100%;
-		}
-		@include transition;
-		&:hover {
-			border-color: #666;
-		}
 	}
+	@include transition;
+	&:hover {
+		border-color: #666;
+	}
+}
 
 
-	.btn, input[type=submit]  {
-		padding: $gaphalf $gap2;
-		background-color:  $color-orange;
-		color: $color-brown;
-		@include transition;
-		border: none;
-		text-decoration: none;
-		border-radius: 0;
-			font-family: monument;
+.btn, input[type=submit]  {
+	padding: $gaphalf $gap2;
+	background-color:  $color-orange;
+	color: $color-brown;
+	@include transition;
+	border: none;
+	text-decoration: none;
+	border-radius: 0;
+	font-family: monument;
 	text-transform: uppercase;
-		@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.05));
-		& ~ & {
-margin-top: $gap;
-		}	
-		&:hover {
-				@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.15));
-			background-color:  $color-red;
-			color: white;
+	@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.05));
+	& ~ & {
+		margin-top: $gap;
+	}	
+	&:hover {
+		@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.15));
+		background-color:  $color-red;
+		color: white;
 
-		}
 	}
+}

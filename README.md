@@ -18,15 +18,12 @@
 ### Pendências, Design
 
 
-- testar galeria (grid)
+
 - favicon
-- tiers de monthly subscription
-- versao mobile
+- mobile (form, "obrigatório")
 - make wow work
-- main menu: some loop for all non-draft articles
 - 404
 - versao em ingles, como faz? fase 2?
-- rever links e pdfs
 
 ### Pendências, Integrações
 
@@ -34,11 +31,9 @@
 	- documentacao de como editar artigos (portugues, ingles)
 	- documentacao de como criar novos artigos (portugues, ingles)
 - decidir financiamento coletivo no site: benfeitoria? patreon? vtek? (buscar isencao)
-- mailchimp
 - github
 - youtube
 - instagram (stories)
-- CNAME janeraka.org
 
 ### Fase 2
 

@@ -41,6 +41,7 @@ a {
 	h1, h2 {
 		padding-top: $gap;
 		color: white;
+		@include transition;
 	}
 	h1 {
 		font-size: 37px;

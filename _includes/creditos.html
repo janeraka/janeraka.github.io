@@ -1,7 +1,12 @@
-<h3>Créditos</h3>
 
-{% for member in site.data.team %}
- 
+
+	{% if page.languages contains "pt" %}
+<h3>Créditos</h3>
+				{% else %}
+<h3>Credits</h3>
+				{% endif %}
+
+{% for member in site.team %}
      	<p><strong>{{ member.name }}:</strong>  {% if page.languages contains "pt" %}
 				{{ member.role.pt }}
 				{% else %}

@@ -10,18 +10,47 @@
 
 
  	<div class="menu">
- 		<a href="#" data-toggle="collapse" data-target="#imprensa" aria-expanded="true" aria-controls="imprensa">Imprensa</a>
- 		<a href="#" data-toggle="collapse" data-target="#contato" aria-expanded="false" aria-controls="contato">Contato</a>
- 		<a href="#" data-toggle="collapse" data-target="#creditos" aria-expanded="false" aria-controls="creditos">Créditos</a>
+ 		<a href="#" data-toggle="collapse" data-target="#imprensa" aria-expanded="true" aria-controls="imprensa">
+ 			{% if page.languages contains "pt" %}
+Imprensa
+	{% else %}
+Press
+	{% endif %}
+</a>
+ 		<a href="#" data-toggle="collapse" data-target="#contato" aria-expanded="false" aria-controls="contato">
+ 			{% if page.languages contains "pt" %}
+Contato
+	{% else %}
+Contact Us
+	{% endif %}
+ 		</a>
+ 		<a href="#" data-toggle="collapse" data-target="#creditos" aria-expanded="false" aria-controls="creditos">
+ 		{% if page.languages contains "pt" %}
+Créditos
+	{% else %}
+Credits
+	{% endif %}
+</a>
  	</div>
  	<div class="accordion" id="footer">
  		<div id="imprensa" class="collapse" aria-labelledby="headingOne" data-parent="#footer">
- 			<h3>Imprensa</h3>
+ 			{% if page.languages contains "pt" %}
+		<h3>Imprensa</h3>
  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
+	{% else %}
+		<h3>Press</h3>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
+	{% endif %}
+ 	
  		</div>
  		<div id="contato" class="collapse" aria-labelledby="headingTwo" data-parent="#footer">
- 			<h3>Contato</h3>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veritatis laudantium, aperiam aspernatur nisi esse molestiae alias natus velit neque.</p>
+ 						{% if page.languages contains "pt" %}
+		<h3>Contato</h3>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
+	{% else %}
+		<h3>Contact Us</h3>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
+	{% endif %}
  		</div>
  		<div id="creditos" class="collapse" aria-labelledby="headingThree" data-parent="#footer">
  			{% include creditos.html %}

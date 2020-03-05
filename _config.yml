@@ -8,8 +8,6 @@ description:
   en: [pending]
 basecolor: '#000000' # for browser settings
 url: 'https://janeraka.org'
-twitter_username: 
-github_username: 
 
 sass:
   load_paths:
