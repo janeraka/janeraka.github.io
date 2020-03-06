@@ -10,6 +10,9 @@ article.form {
 	padding: $gap 0;
 	grid-gap: $gap;
 	grid-template-columns: repeat(2, 1fr);
+	@media (max-width: $bp) {
+		grid-template-columns: 1fr;
+	}
 }
 
 select, input {
@@ -33,7 +36,11 @@ select, input {
 	border: none;
 	text-decoration: none;
 	border-radius: 0;
+	margin-bottom: $gaphalf;
 	font-family: monument;
+		@media (max-width: $bp) {
+		display: block;
+	}
 	text-transform: uppercase;
 	@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.05));
 	&:hover {

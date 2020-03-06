@@ -33,12 +33,16 @@ a {
 		text-transform: uppercase;
 		text-align: center;
 		text-decoration: none;
+filter: drop-shadow(1px 1px 0 rgba(black, .1));
 		&, & svg path {
 			@include transition;
 			fill: white;
+
 		}
+
 		h1, h2 {
 			padding-top: $gap;
+
 			color: white;
 			@include transition;
 		}
@@ -50,14 +54,9 @@ a {
 			max-width: 267px;
 		}
 		&:hover {
-			color: $color-orange;
 			text-decoration: none;
-			svg path {
-				fill: $color-orange;
-			}
-			h1, h2 {
-				color: $color-orange;
-			}
+			filter: drop-shadow(1px 1px 0px rgba($color-orange, .7));
+	
 		}
 		&.small {
 			& svg {
@@ -68,14 +67,29 @@ a {
 				padding-top: 0; 
 			}
 		}
+		@media (max-width: $bp) {
+			& svg {
+			width: 220px;
+		}
+			h1 {
+				font-size: 30px;
+				padding-top: 0; 
+			}
+			h2 {
+			font-size: 14;
+			max-width: 220px;
+		}
+			
+		}
 	}
 }
 
 
 section {
 	h1, h2, h3, h4 {
-		margin-bottom: $gap2;
-		padding-right: $gap5;
+		padding: 0 $gap5 $gap 0 !important;
+		margin: 0;
+		
 	}
 
 }
@@ -87,6 +101,7 @@ section {
 }
 .container {
 	max-width: 700px;
+	padding: 0 $gap2;
 	&.error {
 		margin-bottom: $gap3;
 	}

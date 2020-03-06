@@ -1,4 +1,6 @@
  <div class="divider"></div>
+
+ 
  <footer class="footer wow">
  	<div class="container">
 <!--  		<a href="/pt/nos">Sobre Nós</a>
@@ -10,21 +12,9 @@
 
 
  	<div class="menu">
- 		<a href="#" data-toggle="collapse" data-target="#imprensa" aria-expanded="true" aria-controls="imprensa">
- 			{% if page.languages contains "pt" %}
-Imprensa{% else %}
-Press{% endif %}
-</a>
- 		<a href="#" data-toggle="collapse" data-target="#contato" aria-expanded="false" aria-controls="contato">
- 			{% if page.languages contains "pt" %}
-Contato{% else %}
-Contact Us{% endif %}
- 		</a>
- 		<a href="#" data-toggle="collapse" data-target="#creditos" aria-expanded="false" aria-controls="creditos">
- 		{% if page.languages contains "pt" %}
-Créditos{% else %}
-Credits{% endif %}
-</a>
+ 		<a href="#" data-toggle="collapse" data-target="#imprensa" aria-expanded="true" aria-controls="imprensa">{% if page.languages contains "pt" %}Imprensa{% else %}Press{% endif %}</a>
+ 		<a href="#" data-toggle="collapse" data-target="#contato" aria-expanded="false" aria-controls="contato">{% if page.languages contains "pt" %}Contato{% else %}Contact Us{% endif %}</a>
+ 		<a href="#" data-toggle="collapse" data-target="#creditos" aria-expanded="false" aria-controls="creditos">{% if page.languages contains "pt" %}Créditos{% else %}Credits{% endif %}</a>
  	</div>
  	<div class="accordion" id="footer">
  		<div id="imprensa" class="collapse" aria-labelledby="headingOne" data-parent="#footer">

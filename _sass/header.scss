@@ -8,13 +8,21 @@ header.main {
 	background-position: right bottom;
 
 	padding: $gap 0;
+	@media (max-width: $bp) {
+
+		background-size: 150% 150%;
+	}
 	margin-bottom: $gap3;
 	background-color: #eee;
 	.container {
 		text-align: right;
+	
 		a.logo {
 			display: inline-block;
+	
+				@media (min-width: $bp) {
 			margin-top: 80px;
+	}
 			&.small {
 				margin-top: 0;
 			}

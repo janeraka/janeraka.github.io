@@ -1,11 +1,17 @@
-	<script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/assets/vendor/wow.min.js' | prepend: site.baseurl}}"></script>
-	<!-- <script src="{{'/assets/vendor/lite-yt-embed.js' | prepend: site.baseurl}}"></script> -->
-	<script>
+	<script src="/assets/vendor/jquery.min.js"></script>
+	<script src="/assets/vendor/popper.min.js"></script>
+	<script src="/assets/vendor/bootstrap.min.js"></script>
+	<script src="/assets/vendor/wow.min.js"></script>
+<script type="text/javascript">
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});
 		new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+	$('a[data-toggle="collapse"]').click(function() {
+  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+
+});
 	</script>

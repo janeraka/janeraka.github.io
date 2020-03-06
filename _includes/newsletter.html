@@ -11,20 +11,16 @@
 			{% endif %}
 			<article class="form">
 				<section>
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" 	
-					{% if page.languages contains "pt" %}
-					placeholder="Endereço de Email *"
-					{% else %}
-					placeholder="Email Address"
-					{% endif %}>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" 
+					placeholder="Email">
 				</section>
 
 				<section>
 					<input type="text" value="" name="NAME" class="" id="mce-NAME"
 					{% if page.languages contains "pt" %}
-					placeholder="Nome"
+					placeholder="Nome Completo"
 					{% else %}
-					placeholder="Name"
+					placeholder="Full Name"
 					{% endif %}>
 				</section>
 
