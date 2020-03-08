@@ -1,9 +1,40 @@
 
 
-	{% if page.languages contains "pt" %}
-<h2>Doação</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quaerat nulla suscipit blanditiis sapiente et velit, tempore expedita eveniet porro?</p>
-				{% else %}
-				<h2>Donations</h2>
-			<tt>_includes/doacao.html</tt>
-				{% endif %}
+
+{% if page.languages contains "pt" %}
+<h2>Doação</h2> 
+<ul class="grid">
+	<li>
+		<h3>Via Xoom</h3>
+		<a href="https://www.xoom.com/" class="btn" target="_blank">Xoom</a>
+
+		<p>
+			Time'i Assurini<br>
+			Banco Bradesco<br>
+			Ag: 5591-1<br>
+			Conta Poupança: 1000057-2<br>
+			CPF 70365335282<br>
+			Tv. 3 de Maio, 1040 - São Brás, Belém/PA <br>
+			CEP: 66063-388<br>
+			Cel: 21 987999912
+		</p>	
+	</li>
+	<li>
+		<h3>Via PayPal</h3>
+		<a href="https://www.paypal.com/" class="btn" target="_blank">PayPal</a>
+		<p>marytykwawara@gmail.com</p>
+	</li>
+	<li>
+		<h3>Via CNPJ</h3>
+		<a href="https://cnpj.biz/35069094000130" class="btn" target="_blank">35069094000130</a>
+	</li>
+</ul>
+
+
+
+
+
+{% else %}
+<h2>Donations</h2>
+<tt>_includes/doacao.html</tt>
+{% endif %}
