@@ -1,19 +1,18 @@
 
 
-	{% if page.languages contains "pt" %}
+{% if page.languages contains "pt" %}
 <h3>Créditos</h3>
-				{% else %}
+{% else %}
 <h3>Credits</h3>
-				{% endif %}
+{% endif %}
 
 {% for member in site.team %}
-     	<p><strong>{{ member.name }}:</strong>  {% if page.languages contains "pt" %}
-				{{ member.role.pt }}
-				{% else %}
-				{{ member.role.en }}
-				{% endif %}
-				<br>
-				{% for group in member.social %}
-<a href="{{ group.url }}" target="{{ group.name }}">{{ group.name }}</a>{% if forloop.last == false %},{% endif %}{% endfor %}.</p>
-     
+<p><strong>{{ member.name }}:</strong> <a href="mailto:{{ member.email }}?subject=Janeraka">email</a>{% for group in member.social %}, <a href="{{ group.url }}" target="{{ group.name }}">{{ group.name }}</a>{% endfor %} 
+	<br>
+	{% if page.languages contains "pt" %}
+	{{ member.role.pt }}
+	{% else %}
+	{{ member.role.en }}
+	{% endif %}
+</p>
 {% endfor %}

@@ -6,31 +6,42 @@
   padding: $gap2 0;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: 200px;
-  grid-auto-flow: row dense;
-  li {
-    position: relative;
-    padding: $gap 0;
-    &, h1, h2, h3 {
-      color: white;
-    }
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    grid-column-start: auto;
-    grid-row-start: auto;
-    background-size: cover;
-    background-position: center;
-    &:nth-of-type(3n-2) {
-      background-color: #eee;
-    }
-    &:nth-of-type(3n-1) {
-      background-color: #ccc;
-    }
-    &:nth-of-type(3n) {
-      background-color: #999;
-    }
+  @media (max-width: $bp) {
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: 150px;
+ }
+ grid-auto-flow: row dense;
+ li {
+  @include transition;
+  &, h1, h2, h3 {
+    color: white;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  background-size: cover;
+  background-position: center;
+  &:nth-of-type(3n-2) {
+    background-color: #eee;
+  }
+  &:nth-of-type(3n-1) {
+    background-color: #ccc;
+  }
+  &:nth-of-type(3n) {
+    background-color: #999;
+  }
 
+  @media (min-width: $bp) {
+      cursor: pointer;
+  @include shadow(box, 0 0px 0 rgba(0, 0, 0, 0.1));
+  &:hover {
+    @include scale(1.1);
+    z-index: 1000;
+    @include shadow(box, 0 4px 0 rgba(0, 0, 0, 0.10));
+  }
     &.medium {
       grid-row-end: span 2;
     }
@@ -38,19 +49,20 @@
     &.large {
       grid-row-end: span 3;
     }
-     &.stretch {
-       grid-row-end: span 2;
-      grid-column-end: span 3;
-    }
+    &.stretch {
+     grid-row-end: span 2;
+     grid-column-end: span 3;
+   }
 
-    &.full {
-      grid-column-end: auto;
+   &.full {
+    grid-column-end: auto;
 
-      @media screen and (min-width: 768px) {
-        grid-column: 1/-1;
-        grid-row-end: span 2;
-      }
+    @media screen and (min-width: 768px) {
+      grid-column: 1/-1;
+      grid-row-end: span 2;
     }
   }
+}
+}
 }
 
