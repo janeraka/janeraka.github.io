@@ -18,23 +18,11 @@
  	</div>
  	<div class="accordion" id="footer">
  		<div id="imprensa" class="collapse" aria-labelledby="headingOne" data-parent="#footer">
- 			{% if page.languages contains "pt" %}
-		<h3>Imprensa</h3>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
-	{% else %}
-		<h3>Press</h3>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
-	{% endif %}
  	
+ 	{% include imprensa.html %}
  		</div>
  		<div id="contato" class="collapse" aria-labelledby="headingTwo" data-parent="#footer">
- 						{% if page.languages contains "pt" %}
-		<h3>Contato</h3>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
-	{% else %}
-		<h3>Contact Us</h3>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor temporibus eligendi ipsum dicta odio sequi vero! Odit, cupiditate, fugiat. Rem.</p>
-	{% endif %}
+ 		{% include contato.html %}
  		</div>
  		<div id="creditos" class="collapse" aria-labelledby="headingThree" data-parent="#footer">
  			{% include creditos.html %}

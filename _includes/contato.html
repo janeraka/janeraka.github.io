@@ -1,0 +1,11 @@
+{% if page.languages contains "pt" %}
+		<h3>Contato</h3>
+ 			<p>Fale conosco via <!-- use %0D%0A for line breaks -->
+ 			<a href="mailto:info@janeraka.org?subject=Contato Janeraka">
+ 			  <i class="fa fa-envelope-o"></i>info@janeraka.org</a></p>
+	{% else %}
+		<h3>Contact Us</h3>
+ 		<p>Talk to us via our email 
+ 			<a href="mailto:info@janeraka.org?subject=Janeraka">
+ 			  <i class="fa fa-envelope-o"></i>info@janeraka.org</a></p>
+	{% endif %}
