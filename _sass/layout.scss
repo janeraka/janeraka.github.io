@@ -106,3 +106,18 @@ section {
 		margin-bottom: $gap3;
 	}
 }
+
+ul.grid {
+	display: grid;
+	grid-gap: $gap2;
+	@include reset(list);
+margin: 0;
+padding: 0;
+	grid-template-columns: repeat(3, 1fr);
+	@media (max-width: $bp) {
+		grid-template-columns: 1fr;
+	}
+	a.btn {
+		display: block;
+	}
+}
