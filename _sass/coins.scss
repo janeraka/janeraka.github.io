@@ -16,17 +16,17 @@ $coin: 100px;
 				}
 			}
 			&:nth-of-type(1) svg {
-#shine-1, #shine-2 {
+				#shine-1, #shine-2 {
 					@include fadeIn($delay: $stagger * 5);
 				}
 			}
 			&:nth-of-type(2) svg {
-#shine-1, #shine-2 {
+				#shine-1, #shine-2 {
 					@include fadeIn($delay: $stagger * 6);
 				}
 			}
 			&:nth-of-type(3) svg {
-#shine-1, #shine-2 {
+				#shine-1, #shine-2 {
 					@include fadeIn($delay: $stagger * 7);
 				}
 			}
@@ -59,20 +59,20 @@ $coin: 100px;
 			}
 			svg {
 
-			
+				
 				#shine-1, #shine-2 {
 					fill: rgba(white, .2);
 				}
-					#glimmer-1, #glimmer-2, #glimmer-3 {
-				fill: rgba(white, 1);
-				@include fade($y: 35px);
-			}
+				#glimmer-1, #glimmer-2, #glimmer-3 {
+					fill: rgba(white, 1);
+					@include fade($y: 35px);
+				}
 				#rim {
-				fill: $color-brown;
-			}
-			#bg {
-				fill: rgba($color-orange, 80%);
-			}
+					fill: $color-brown;
+				}
+				#bg {
+					fill: rgba($color-orange, 80%);
+				}
 			}
 		}
 
@@ -85,9 +85,9 @@ $coin: 100px;
 			path, circle {
 				@include transition;
 			}
-		#inside {
-	display: none;
-}
+			#inside {
+				display: none;
+			}
 
 		}
 		span {
