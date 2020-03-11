@@ -6,27 +6,52 @@ $coin: 100px;
 	grid-gap: $gap;
 	grid-template-columns: $coin $coin $coin 1fr;
 	.coin {
-		background-color: $color-orange;
 		font-family: monument;
 		width: $coin;
 		height: $coin;
 		display: block;
 		text-align: center;
-		@include radius(50%);
 		text-decoration: none;
-		font-size: 20px;
-		line-height: 100%;
-		@include shadow(text, 0 -1px 0px lighten($color-orange, 20%));
-		padding-top: $coin / 3;
+		.value {
+			font-size: 20px;
+			line-height: 100%;
+			font-size: 20px;
+			line-height: 100%;
+			width: $coin;
+			height: $coin;
+			padding-top: $coin / 3;
+			@include radius(50%);
+			margin-top: -$coin;
+			@include transition;
+			@include shadow(text, 0 -1px 0px lighten($color-orange, 20%));
+			@include shadow(box, 0 4px 0 rgba(black, .1));
+
+		}
+		&:hover {
+			.value	{
+				color: black;
+				@include shadow(box, 0 20px 10px rgba(black, .07));
+			}
+			svg #rim {
+				fill: $color-brown;
+			}
+		}
+
+		svg {
+			width: $coin;
+			height: $coin;
+			#shine-1, #shine-2, #glimmer-1, #glimmer-2, #glimmer-3, #inside {
+				display: none;
+			}
+			path {
+				@include transition;
+			}
+
+		}
 		span {
 			font-size: 15px;
 			display: block;
 		}
-		@include shadow(box, 0 4px 2px rgba(0, 0, 0, 0.1));
-		&:hover {
-			@include translate(0, -10);
-			color: black;
-			@include shadow(box, 0 30px 10px rgba(black, .07));
-		}
+
 	}
 }
