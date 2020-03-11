@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 title: imprensa
 slug: imprensa
 categories: article

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 title: contate-nos
 slug: contato
 categories: article

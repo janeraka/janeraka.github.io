@@ -1,0 +1,32 @@
+$coin: 100px;
+
+.coins {
+	display: grid;
+	padding: $gap2 0;
+	grid-gap: $gap;
+	grid-template-columns: $coin $coin $coin 1fr;
+	.coin {
+		background-color: $color-orange;
+		font-family: monument;
+		width: $coin;
+		height: $coin;
+		display: block;
+		text-align: center;
+		@include radius(50%);
+		text-decoration: none;
+		font-size: 20px;
+		line-height: 100%;
+		@include shadow(text, 0 -1px 0px lighten($color-orange, 20%));
+		padding-top: $coin / 3;
+		span {
+			font-size: 15px;
+			display: block;
+		}
+		@include shadow(box, 0 4px 2px rgba(0, 0, 0, 0.1));
+		&:hover {
+			@include translate(0, -10);
+			color: black;
+			@include shadow(box, 0 30px 10px rgba(black, .07));
+		}
+	}
+}

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 title: Os Assurini do Xingu e o Coletivo Marytykwawara Awaete
 slug: assurinis
 categories: article
