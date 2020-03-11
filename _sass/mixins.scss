@@ -252,18 +252,22 @@ $prefixes: webkit moz ms o;
   @font-face {
     font-family: #{$title};
     src: url("#{$path}#{$file}.eot");
-    src: url("#{$path}#{$file}.eot?#iefix") format("embedded-opentype"), url("#{$path}#{$file}.woff") format("woff"), url("#{$path}#{$file}.ttf") format("truetype"), url("#{$path}#{$file}.svg##{$title}") format("svg");
+    src: url("#{$path}#{$file}.eot?#iefix") format("embedded-opentype"), 
+    url("#{$path}#{$file}.woff") format("woff"), 
+    url("#{$path}#{$file}.ttf") format("truetype"), 
+    // url("#{$path}#{$file}.svg##{$title}") format("svg")
+    ;
     font-weight: $weight;
     font-style: $style;
     font-stretch: $stretch;
     text-transform: transform;
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    @font-face {
-      font-family: $title;
-      src: url("#{$path}#{$file}.svg##{$title}") format("svg");
-    }
-  }
+  // @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  //   @font-face {
+  //     font-family: $title;
+  //     src: url("#{$path}#{$file}.svg##{$title}") format("svg");
+  //   }
+  // }
 }
 
 // (\_/)   gradient mixin

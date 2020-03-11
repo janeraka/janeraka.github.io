@@ -50,3 +50,23 @@ select, input {
 
 	}
 }
+
+.custom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: $gaphalf;
+	input {
+		background-image: url(/assets/images/cypher.svg);
+		background-repeat: no-repeat;
+		background-position: 10px center;
+		padding-left: $gap + $gaphalf;
+		height: 45px;
+	}
+	input, .btn {
+		height: 45px;
+	}
+	.btn {
+		padding-left: $gap;
+		padding-right: $gap;
+	}
+}

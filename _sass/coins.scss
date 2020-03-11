@@ -1,11 +1,36 @@
 $coin: 100px;
 
+
+
 .coins {
 	display: grid;
 	padding: $gap2 0;
 	grid-gap: $gap;
 	grid-template-columns: $coin $coin $coin 1fr;
 	.coin {
+		&.wow {
+			@include fade($y: 50px);
+			svg {
+				#shine-1, #shine-2 {
+					fill: rgba(white, .25);
+				}
+			}
+			&:nth-of-type(1) svg {
+#shine-1, #shine-2 {
+					@include fadeIn($delay: $stagger * 5);
+				}
+			}
+			&:nth-of-type(2) svg {
+#shine-1, #shine-2 {
+					@include fadeIn($delay: $stagger * 6);
+				}
+			}
+			&:nth-of-type(3) svg {
+#shine-1, #shine-2 {
+					@include fadeIn($delay: $stagger * 7);
+				}
+			}
+		}
 		font-family: monument;
 		width: $coin;
 		height: $coin;
@@ -29,23 +54,40 @@ $coin: 100px;
 		}
 		&:hover {
 			.value	{
-				color: black;
+				padding-top: ($coin / 3)- 3;
 				@include shadow(box, 0 20px 10px rgba(black, .07));
 			}
-			svg #rim {
+			svg {
+
+			
+				#shine-1, #shine-2 {
+					fill: rgba(white, .2);
+				}
+					#glimmer-1, #glimmer-2, #glimmer-3 {
+				fill: rgba(white, 1);
+				@include fade($y: 35px);
+			}
+				#rim {
 				fill: $color-brown;
+			}
+			#bg {
+				fill: rgba($color-orange, 80%);
+			}
 			}
 		}
 
 		svg {
 			width: $coin;
 			height: $coin;
-			#shine-1, #shine-2, #glimmer-1, #glimmer-2, #glimmer-3, #inside {
-				display: none;
+			#glimmer-1, #glimmer-2, #glimmer-3 {
+				fill: rgba(white, 0);
 			}
-			path {
+			path, circle {
 				@include transition;
 			}
+		#inside {
+	display: none;
+}
 
 		}
 		span {
