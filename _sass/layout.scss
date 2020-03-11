@@ -9,9 +9,9 @@ html {
 }
 
 body {
-			@media (min-width: $bp) {
-	font-size: 16px;
-		}
+	@media (min-width: $bp) {
+		font-size: 16px;
+	}
 }
 
 .notes {
@@ -20,129 +20,134 @@ body {
 }
 
 
-	h1, h2, h3, h4 {
-		font-family: monument;
-		text-transform: uppercase;
+h1, h2, h3, h4 {
+	font-family: monument;
+	text-transform: uppercase;
 
-		color: $color-brown;	
+	color: $color-brown;	
+}
+
+@media (max-width: $bp) {
+	h1 {
+		font-size: $font-size;
+	}
+	h2 {
+		font-size: $font-size * .9;
+	}
+	h3 {
+		font-size: $font-size * .8;
+	}
+	h4 {
+		font-size: $font-size * .7;
+	}
+}
+
+
+a {
+	color: $color-brown;
+	text-decoration: underline;
+
+	@include transition;
+	&:hover {
+		color: $color-red;
 	}
 
-	@media (max-width: $bp) {
+	&.logo {
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		filter: drop-shadow(1px 1px 0 rgba(black, .1));
+		&, svg path {
+			@include transition;
+			fill: white;
+
+		}
+
+		h1, h2 {
+			padding-top: $gap;
+
+			color: white;
+			@include transition;
+		}
 		h1 {
-			font-size: $font-size;
+			font-size: 37px;
 		}
 		h2 {
-			font-size: $font-size * .9;
+			font-size: 16;
+			max-width: 267px;
 		}
-		h3 {
-			font-size: $font-size * .8;
-		}
-		h4 {
-			font-size: $font-size * .7;
-		}
-	}
-
-
-	a {
-		color: $color-brown;
-		text-decoration: underline;
-
-		@include transition;
 		&:hover {
-			color: $color-red;
-		}
-
-		&.logo {
-			text-transform: uppercase;
-			text-align: center;
 			text-decoration: none;
-			filter: drop-shadow(1px 1px 0 rgba(black, .1));
-			&, svg path {
-				@include transition;
-				fill: white;
+			filter: drop-shadow(1px 1px 0px rgba($color-orange, .7));
 
-			}
-
-			h1, h2 {
-				padding-top: $gap;
-
-				color: white;
-				@include transition;
+		}
+		&.small {
+			svg {
+				width: 220px;
 			}
 			h1 {
-				font-size: 37px;
+				font-size: 30px;
+				padding-top: 0; 
+			}
+		}
+		@media (max-width: $bp) {
+			svg {
+				width: 220px;
+			}
+			h1 {
+				font-size: 30px;
+				padding-top: 0; 
 			}
 			h2 {
-				font-size: 16;
-				max-width: 267px;
+				font-size: 14;
+				max-width: 220px;
 			}
-			&:hover {
-				text-decoration: none;
-				filter: drop-shadow(1px 1px 0px rgba($color-orange, .7));
 
-			}
-			&.small {
-				svg {
-					width: 220px;
-				}
-				h1 {
-					font-size: 30px;
-					padding-top: 0; 
-				}
-			}
-			@media (max-width: $bp) {
-			svg {
-					width: 220px;
-				}
-				h1 {
-					font-size: 30px;
-					padding-top: 0; 
-				}
-				h2 {
-					font-size: 14;
-					max-width: 220px;
-				}
-
-			}
 		}
 	}
+}
 
 
-	section {
-		h1, h2, h3, h4 {
-			padding: 0 $gap5 $gap 0 !important;
-			margin: 0;
-					@media (max-width: $bp) {
-		padding-right: 0!important;
-		}
-
-		}
-
-	}
-	.divider {
-		height: $gap;
-		background-image: url('/assets/images/divider.svg');
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-	.container {
-		max-width: 700px;
-		padding: 0 $gap2;
-		&.error {
-			margin-bottom: $gap3;
-		}
-	}
-	ul.grid {
-		display: grid;
-		grid-gap: $gap2;
-		@include reset(list);
+section {
+	h1, h2, h3, h4 {
+		padding: 0 $gap5 $gap 0 !important;
 		margin: 0;
-		padding: 0;
-		grid-template-columns: repeat(3, 1fr);
 		@media (max-width: $bp) {
-			grid-template-columns: 1fr;
+			padding-right: 0!important;
 		}
-		a.btn {
-			display: block;
-		}
+
 	}
+
+}
+.divider {
+	height: $gap;
+	background-image: url('/assets/images/divider.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.container {
+	max-width: 700px;
+	padding: 0 $gap2;
+	&.error {
+		margin-bottom: $gap3;
+	}
+}
+ul.grid {
+	display: grid;
+	grid-gap: $gap2;
+	@include reset(list);
+	margin: 0;
+	padding: 0;
+	grid-template-columns: repeat(3, 1fr);
+	@media (max-width: $bp) {
+		grid-template-columns: 1fr;
+	}
+	a.btn {
+		display: block;
+	}
+}
+
+blockquote {
+	@extend h3;
+	text-transform: none;
+}
