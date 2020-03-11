@@ -17,11 +17,11 @@
 
 ### Pendências, Design
 
+- logo animation, more subtle
+- english version
+- fix page title
+- coins animation
 
-
-- favicon
-- mobile
-- make wow work
 
 ### Pendências, Integrações
 

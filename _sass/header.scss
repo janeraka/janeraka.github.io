@@ -6,7 +6,7 @@ header.main {
 	background-image: url('/assets/images/header.jpg');
 	background-size: cover;
 	background-position: right bottom;
-
+@include fadeIn;
 	padding: $gap 0;
 	@media (max-width: $bp) {
 
@@ -19,7 +19,6 @@ header.main {
 	
 		a.logo {
 			display: inline-block;
-	
 				@media (min-width: $bp) {
 			margin-top: 80px;
 	}

@@ -57,7 +57,7 @@ body {
 			text-align: center;
 			text-decoration: none;
 			filter: drop-shadow(1px 1px 0 rgba(black, .1));
-			&, & svg path {
+			&, svg path {
 				@include transition;
 				fill: white;
 
@@ -82,7 +82,7 @@ body {
 
 			}
 			&.small {
-				& svg {
+				svg {
 					width: 220px;
 				}
 				h1 {
@@ -91,7 +91,7 @@ body {
 				}
 			}
 			@media (max-width: $bp) {
-				& svg {
+			svg {
 					width: 220px;
 				}
 				h1 {
@@ -132,7 +132,6 @@ body {
 			margin-bottom: $gap3;
 		}
 	}
-
 	ul.grid {
 		display: grid;
 		grid-gap: $gap2;

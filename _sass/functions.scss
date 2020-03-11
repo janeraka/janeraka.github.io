@@ -6,7 +6,7 @@ $color-red: #CD4842;
 $color-blue: #65B3EF;
 $color-gray: #ccc;
 
-$delay: 300ms;
+$stagger: 300ms;
 $bp: 700px;
 
 $gap: 20px;
@@ -23,3 +23,27 @@ $gaphalf: $gap / 2;
 
 $borders: $gap2;
 $font-size: 27px;
+
+@mixin fade($x: 0, $y: 0, $duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(fade);
+  @include duration($duration);
+  @include function($function);
+  @include delay($delay);
+  @include count($count);
+  @include visibility($visibility);
+  @include fill-mode($fill);
+
+  @at-root {
+    @include keyframes(fade) {
+      0% {
+        opacity: 0;
+        transform: translate($x, $y);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+  }
+}

@@ -1,7 +1,11 @@
 	{% if page.languages contains "pt" %}
-	<h1>Como Ajudar</h1>
+	<h1 class="wow">Como Ajudar</h1>
 	{% else %}
 	<h1>How to Help</h1>
 	{% endif %}
-	{% include doacao.html %}
-	{% include newsletter.html %}
+	<div class="wow">
+		{% include doacao.html %}
+	</div>
+	<div class="wow">
+		{% include newsletter.html %}
+	</div>
