@@ -1,0 +1,10 @@
+<section class="container" id="help">
+		
+			{% if page.languages contains "pt" %}
+	<h1 class="wow">Como Ajudar</h1>
+	{% else %}
+	<h1 class="wow">How to Help</h1>
+	{% endif %}
+	{% include donations.html %}
+	{% include newsletter.html %}
+		</article>
