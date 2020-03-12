@@ -1,81 +1,54 @@
 
 <div id="donations">
-
-{% if page.languages contains "pt" %}
 	<div class="wow">
-<h2>Doação</h2> 
-<p>Nós gostariamos que você ajudasse nossa organização e nossa causa.</p>
-<p>É extremamente importante que consigamos todos os recursos possíveis para proteger nossa Amazônia ameaçada e seus povos ancentrais.</p>
-<ul class="grid">
-		
-	<li>
-		<a href="https://www.xoom.com/" class="btn" target="_blank">Xoom</a>
+		<h2>Doação</h2> 
+		<p>Nós gostariamos que você ajudasse nossa organização e nossa causa.</p>
+		<p>É extremamente importante que consigamos todos os recursos possíveis para proteger nossa Amazônia ameaçada e seus povos ancentrais.</p>
+		<ul class="grid">
+			<li>
+				<a href="https://www.xoom.com/" class="btn" target="_blank">Xoom</a>
+				<p>
+					Time'i Assurini<br>
+					
+					{% if page.languages contains "pt" %}
+					Banco Bradesco<br>
+					Ag: 5591<br>
+					Conta Poupança: 1000057-2<br>
+					{% else %}
+					Bradesco Bank<br>
+					Routing: 5591<br>
+					Savings Acct: 1000057-2<br>
+					{% endif %}
+					CPF 70365335282<br>
+					Tv. 3 de Maio, 1040 - São Brás, Belém/PA <br>
+					CEP: 66063-388<br>
+					Cel: 21 987999912
+				</p>	
+			</li>
 
-		<p>
-			Time'i Assurini<br>
-			Banco Bradesco<br>
-			Ag: 5591<br>
-			Conta Poupança: 1000057-2<br>
-			CPF 70365335282<br>
-			Tv. 3 de Maio, 1040 - São Brás, Belém/PA <br>
-			CEP: 66063-388<br>
-			Cel: 21 987999912
-		</p>	
-	</li>
-
-	<li>
-		<a href="https://cnpj.biz/35069094000130" class="btn" target="_blank">CNPJ</a>
-		<p>35069094000130</p>
-	</li>
-	<li>
-		<a href="https://www.paypal.com/" class="btn disabled" target="_blank">PayPal</a>
-		<p>
+			<li>
+				<a href="https://cnpj.biz/35069094000130" class="btn" target="_blank">CNPJ</a>
+				<p>35069094000130</p>
+			</li>
+			<li>
+				<a href="https://www.paypal.com/" class="btn disabled" target="_blank">PayPal</a>
+				<p>
 	<!-- 		{{ site.email }}
-<span class="notes">Escolha <strong>Amigos e Família</strong></span> -->
-<span class="notes">em breve</span>
-</p>
-		
-	</li>
+		<span class="notes">Escolha <strong>Amigos e Família</strong></span> -->
+		{% if page.languages contains "pt" %}
+		<span class="notes">em breve</span>
+			<!-- 		{{ site.email }}
+		<span class="notes">Escolha <strong>Amigos e Família</strong></span> -->
+		{% else %}
+		<span class="notes">soon</span>
+			<!-- 		{{ site.email }}
+		<span class="notes">Choose <strong>Friends and Family</strong></span> -->
+		{% endif %}
+	</p>
+
+</li>
 </ul>
-	</div>
-{% else %}
-<h2 class="wow">Donations</h2>
-<div class="description wow">
-	<p>We hope you consider supporting our organization and our cause</p>
-<p>It is of utmost importance that we gather all possible resources and forces to protect our endangered Amazon and its ancestral peoples.</p>
 </div>
-<div class="coins">
-		<a href="#" class="coin wow" data-wow-delay="0" >
-			{% include logos/coin.svg %}
-			<div class="value">
-				$5
-		<span>/mo</span>
-			</div>
-	</a>
-		<a href="#" class="coin wow" data-wow-delay="300ms">
-			{% include logos/coin.svg %}
-			<div class="value">
-				$15
-		<span>/mo</span>
-			</div>
-	</a>
-		<a href="#" class="coin wow" data-wow-delay="600ms">
-			{% include logos/coin.svg %}
-			<div class="value">
-				$25
-			<span>/mo</span>
-			</div>
-		</a>
-
-	<div class="custom">
-		<input type="text">
-		<a href="#" class="btn">Donate</a>
-	</div>
-</div>
-
-{% endif %}
-
-
 </div>
 
 

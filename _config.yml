@@ -22,6 +22,16 @@ exclude:
   - package-lock.json
   - yarn.lock
 
+donations:
+  monthly-en:
+    - value: 5
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QEYKGU7E6N8WQ
+    - value: 15
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AZQZRSY4CXW6Q
+    - value: 25
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBHT55BVNSZ72
+
+
 team: 
   - name: Nicholas Frota
     email: info@nicholasfrota.com
@@ -31,12 +41,15 @@ team:
     social:
       - name: site
         url: https://praxis.nyc
+        delay: 0ms
       - name: mastodon
         url: https://mastodon.social/@nonlinear
+        delay: 300ms
       - name: twitter
         url: https://twitter.com/nonlinear
       - name: instagram
         url: https://instagram.com/nonlinear
+        delay: 600ms
 
   - name: Danilo Vaz
     email: dnllvrvz@gmail.com
