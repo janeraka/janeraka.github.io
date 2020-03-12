@@ -36,6 +36,19 @@ donations:
     - value: custom
       link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TC5WE2JAXKX3G&source=url
       delay: 900ms
+  single-en:
+    - value: 5
+      link: xxx
+      delay: 0ms
+    - value: 15
+      link: xxx
+      delay: 300ms
+    - value: 25
+      link: xxx
+      delay: 600ms
+    - value: custom
+      link: xxx
+      delay: 900ms
 
 team: 
   - name: Nicholas Frota

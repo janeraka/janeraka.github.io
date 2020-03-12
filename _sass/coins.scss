@@ -1,14 +1,24 @@
-$coin: 90px;
-
-
+$coin: 100px;
 
 .coins {
 	@include reset(list);
 	text-align: center;
 	margin: 0;
-	padding: $gap 0;
+	padding-top: $gap;
+	[data-toggle="collapse"] {
+	font-size: 80%;
+	display: block;
+}
 	li {
 		display: inline-block;
+	}
+	&#single  .details {
+
+			padding-top: 40px;
+	}
+		&#monthly  .details {
+
+			padding-top: 30px;
 	}
 	.coin {
 		&.wow {
@@ -53,7 +63,6 @@ $coin: 90px;
 			line-height: 130%;
 			width: $coin;
 			height: $coin;
-			padding-top: $coin / 3;
 			@include radius(50%);
 			margin-top: -$coin;
 			@include transition;
@@ -68,13 +77,14 @@ $coin: 90px;
 			display: block;
 		}
 		}
-				&.type-custom .value {
+				&.monthly-custom, &.single-custom {
+					.value {
 			font-size: 15px;
 			line-height: 100%;
 		}
+				}
 		&:hover {
 			.details	{
-				padding-top: ($coin / 3)- 3;
 				@include shadow(box, 0 20px 10px rgba(black, .07));
 			}
 			svg {
