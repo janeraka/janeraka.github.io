@@ -1,12 +1,15 @@
-$coin: 100px;
+$coin: 90px;
 
 
 
 .coins {
-	display: grid;
-	padding: $gap2 0;
-	grid-gap: $gap;
-	grid-template-columns: $coin $coin $coin 1fr;
+	@include reset(list);
+	text-align: center;
+	margin: 0;
+	padding: $gap 0;
+	li {
+		display: inline-block;
+	}
 	.coin {
 		&.wow {
 			@include fade($y: 50px);
@@ -30,18 +33,24 @@ $coin: 100px;
 					@include fadeIn($delay: $stagger * 7);
 				}
 			}
+			&:nth-of-type(4) svg {
+				#shine-1, #shine-2 {
+					@include fadeIn($delay: $stagger * 8);
+				}
+			}
 		}
 		font-family: monument;
 		width: $coin;
 		height: $coin;
 		display: block;
+		margin: 0 5px;
+		@media (max-width: $bp) {
+			margin: 5px;
+		}
 		text-align: center;
 		text-decoration: none;
-		.value {
-			font-size: 20px;
-			line-height: 100%;
-			font-size: 20px;
-			line-height: 100%;
+		.details {
+			line-height: 130%;
 			width: $coin;
 			height: $coin;
 			padding-top: $coin / 3;
@@ -50,10 +59,21 @@ $coin: 100px;
 			@include transition;
 			@include shadow(text, 0 -1px 0px lighten($color-orange, 20%));
 			@include shadow(box, 0 4px 0 rgba(black, .1));
-
+.value {
+			font-size: 30px;
+			display: block;
+		}
+		.type {
+			font-size: 15px;
+			display: block;
+		}
+		}
+				&.type-custom .value {
+			font-size: 15px;
+			line-height: 100%;
 		}
 		&:hover {
-			.value	{
+			.details	{
 				padding-top: ($coin / 3)- 3;
 				@include shadow(box, 0 20px 10px rgba(black, .07));
 			}
@@ -90,10 +110,7 @@ $coin: 100px;
 			}
 
 		}
-		span {
-			font-size: 15px;
-			display: block;
-		}
+		
 
 	}
 }
