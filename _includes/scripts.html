@@ -2,7 +2,7 @@
 	<script src="/assets/vendor/popper.min.js"></script>
 	<script src="/assets/vendor/bootstrap.min.js"></script>
 	<script src="/assets/vendor/wow.min.js"></script>
-<script type="text/javascript">
+	<script type="text/javascript">
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});
@@ -13,12 +13,12 @@
                       mobile:       true,       // default
                       live:         true        // default
                     }
-			).init();
-	</script>
+                    ).init();
+                  </script>
 
-	<script type="text/javascript">
-	$('a[data-toggle="collapse"]').click(function() {
-  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                  <script type="text/javascript">
+                  	$('a.to-bottom').click(function() {
+                  		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
-});
-	</script>
+                  	});
+                  </script>

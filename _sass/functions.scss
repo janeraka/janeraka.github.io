@@ -24,7 +24,7 @@ $gaphalf: $gap / 2;
 $borders: $gap2;
 $font-size: 27px;
 
-@mixin fade($x: 0, $y: 0, $duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin fade($x: 0, $y: 0, $rotate: 0, $duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(fade);
   @include duration($duration);
   @include function($function);
@@ -37,12 +37,12 @@ $font-size: 27px;
     @include keyframes(fade) {
       0% {
         opacity: 0;
-        transform: translate($x, $y);
+        transform: rotate($rotate) translate($x, $y);
       }
 
       100% {
         opacity: 1;
-        transform: translate(0, 0);
+        transform: rotate(0) translate(0, 0);
       }
     }
   }
