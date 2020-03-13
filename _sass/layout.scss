@@ -124,6 +124,9 @@ section {
 	background-image: url('/assets/images/divider.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
+	&.spacing {
+		padding: $gap2 0;
+	}
 }
 .container {
 	max-width: 700px;
