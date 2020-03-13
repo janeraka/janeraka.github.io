@@ -14,7 +14,7 @@ include-npm-deps:
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)
 	cp -R node_modules/bootstrap/scss $(SCSS_VENDOR_DIR)bootstrap
 	cp node_modules/wowjs/dist/wow.min.js $(VENDOR_DIR)
-	cp -R reveal.js/css/theme $(VENDOR_DIR)reveal_theme
+# 	/cp -R reveal.js/css/theme $(VENDOR_DIR)reveal_theme
 	cp -R node_modules/animatewithsass $(SCSS_VENDOR_DIR)animatewithsass
 
 
