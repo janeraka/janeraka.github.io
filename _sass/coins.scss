@@ -13,19 +13,19 @@ $coin: 100px;
 	margin: 0;
 	padding-top: $gap;
 	[data-toggle="collapse"] {
-	font-size: 80%;
-	display: block;
-}
+		font-size: 80%;
+		display: block;
+	}
 	li {
 		display: inline-block;
 	}
 	&#single  .details {
 
-			padding-top: 40px;
+		padding-top: 42px;
 	}
-		&#monthly  .details {
+	&#monthly  .details {
 
-			padding-top: 30px;
+		padding-top: 32px;
 	}
 	.coin {
 		&.wow {
@@ -55,20 +55,24 @@ $coin: 100px;
 			@include transition;
 			@include shadow(text, 0 -1px 0px lighten($color-orange, 20%));
 			@include shadow(box, 0 4px 0 rgba(black, .1));
-.value {
-			font-size: 30px;
-			display: block;
+			.value {
+				font-size: 23px;
+				display: block;
+
+			}
+			.type {
+				font-size: 15px;
+				display: block;
+			}
 		}
-		.type {
-			font-size: 15px;
-			display: block;
+		&.type-custom {
+			.value {
+				font-size: 15px;
+				line-height: 100%;
+			}
 		}
-		}
-				&.monthly-custom, &.single-custom {
-					.value {
-			font-size: 15px;
-			line-height: 100%;
-		}
+		&:not(.type-custom) .value:before {
+					content: "$";
 				}
 		&:hover {
 			.details	{

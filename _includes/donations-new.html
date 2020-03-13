@@ -17,7 +17,7 @@
                       	<ul class=" monthly">
 		{% for donation in site.donations.monthly-en %}
 		<li>
-			<a href="{{ donation.link }}" class="coin wow monthly-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
+			<a href="{{ donation.link }}" class="coin wow type-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
 			{% include logos/coin.svg %}
 			<div class="details">
 				<div class="value">{{ donation.value }}</div>
@@ -33,7 +33,7 @@
  	   	<ul class="single">
 		{% for donation in site.donations.single-en %}
 		<li>
-			<a href="{{ donation.link }}" class="coin wow single-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
+			<a href="{{ donation.link }}" class="coin wow type-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
 			{% include logos/coin.svg %}
 			<div class="details">
 				<div class="value">{{ donation.value }}</div>
