@@ -24,6 +24,13 @@ $gaphalf: $gap / 2;
 $borders: $gap2;
 $font-size: 27px;
 
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
 @mixin fade($x: 0, $y: 0, $rotate: 0, $duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(fade);
   @include duration($duration);

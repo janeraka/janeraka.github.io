@@ -1,69 +1,81 @@
-
-
 .gallery {
-  display: grid;
-  @include reset(list);
-  padding: $gap2 0;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: 200px;
-  @media (max-width: $bp) {
-   grid-template-columns: repeat(2, 1fr);
-   grid-auto-rows: 150px;
+ line-height: 0;
+ margin: $gap3 0;
+ column-gap: 0px;
+
+ -moz-column-count: 3;
+ -webkit-column-count: 3;
+ column-count: 3;
+
+ @media (max-width: 1200px) {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2; 
+}
+ @media (max-width: $bp) {
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1; 
+}
+visibility: hidden; 
+/* Prevents :hover from triggering in the gaps between items */
+
+$scaledown: .8;
+$scaleup: 1.2;
+$rotaterange: 5;
+
+&:hover > img { 
+  opacity: 0.6; 
+  /* different times so its diff numbers per each, each time. i know. */
+ &:nth-of-type(1):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
- grid-auto-flow: row dense;
- li {
+  &:nth-of-type(2):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }  
+ &:nth-of-type(3):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+   &:nth-of-type(4):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+    &:nth-of-type(5):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+    &:nth-of-type(6):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+    &:nth-of-type(7):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+    &:nth-of-type(8):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+    &:nth-of-type(9):not(:hover) {
+   transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
+ }
+}
+& > img {
+  width: 100% !important;
+  height: auto !important;
+  border: solid 0px white;
   @include transition;
-  &, h1, h2, h3 {
-    color: white;
-  }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-sizing: border-box;
-  grid-column-start: auto;
-  grid-row-start: auto;
-  background-size: cover;
-  background-position: center;
-  &:nth-of-type(3n-2) {
-    background-color: #eee;
-  }
-  &:nth-of-type(3n-1) {
-    background-color: #ccc;
-  }
-  &:nth-of-type(3n) {
-    background-color: #999;
-  }
-
-  @media (min-width: $bp) {
-      cursor: pointer;
-  @include shadow(box, 0 0px 0 rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  visibility: visible; 
+  /* Brings the child items back in, even though the parent is `hidden` */
+  @include shadow(box, 0 4px 0px rgba(0, 0, 0, 0));
   &:hover {
-    @include scale(1.1);
-    z-index: 1000;
-    @include shadow(box, 0 4px 0 rgba(0, 0, 0, 0.10));
-  }
-    &.medium {
-      grid-row-end: span 2;
-    }
-
-    &.large {
-      grid-row-end: span 3;
-    }
-    &.stretch {
-     grid-row-end: span 2;
-     grid-column-end: span 3;
-   }
-
-   &.full {
-    grid-column-end: auto;
-
-    @media screen and (min-width: 768px) {
-      grid-column: 1/-1;
-      grid-row-end: span 2;
-    }
+    @include shadow(box, 0 5px 10px rgba(black, .3));
+    opacity: 1; 
+      border: solid 10px white;
+    transform: scale($scaleup);
+    z-index: 1000; 
+    /* Fade in the currently hovered item */
   }
 }
 }
-}
+
+
+
+
 

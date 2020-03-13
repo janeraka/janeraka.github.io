@@ -1,12 +1,8 @@
-
-
-
-
 header.main {
-	background-image: url('/assets/images/header.jpg');
+	background-image: url('/assets/images/cover.jpg');
 	background-size: cover;
-	background-position: right bottom;
-@include fadeIn;
+	background-position: center bottom;
+	@include fadeIn;
 	padding: $gap 0;
 	@media (max-width: $bp) {
 
@@ -16,12 +12,12 @@ header.main {
 	background-color: #ccc;
 	.container {
 		text-align: right;
-	
+
 		a.logo {
 			display: inline-block;
-				@media (min-width: $bp) {
-			margin-top: 80px;
-	}
+			@media (min-width: $bp) {
+				margin-top: 80px;
+			}
 			&.small {
 				margin-top: 0;
 			}

@@ -45,7 +45,6 @@ select, input {
 	&:not(.disabled) {
 		@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.1));
 	&:hover {
-		// @include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.15));
 	@include shadow(box, 0 5px 5px rgba(black, .2));
 		background-color:  $color-red;
 		color: white;

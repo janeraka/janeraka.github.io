@@ -6,50 +6,50 @@ layout: home
 <body>
 	<header class="main">
 		<div class="container">
-				{% include logo.html %}
+			{% include logo.html %}
 		</div>
 	</header>
 	<article>
 
+		{% include aboutus.html %}
 
-<!-- 			<section class="wow container">
-				{% include acolhimento.html %}
+		<section class="wow gallery">
+			{% for image in site.static_files %}
+			{% if image.path contains '/assets/images/gallery-1' %}
+			<img src="{{ site.baseurl }}{{ image.path }}">
+			{% endif %}
+			{% endfor %}
+		</section>
+
+		{% include mission.html %}
+
+		<section class="wow gallery">
+			{% for image in site.static_files %}
+			{% if image.path contains '/assets/images/gallery-2' %}
+			<img src="{{ site.baseurl }}{{ image.path }}">
+			{% endif %}
+			{% endfor %}
+		</section>
+
+		{% include challenges.html %}
+
+		<section class="wow gallery">
+			{% for image in site.static_files %}
+			{% if image.path contains '/assets/images/gallery-3' %}
+			<img src="{{ site.baseurl }}{{ image.path }}">
+			{% endif %}
+			{% endfor %}
+		</section>
+
+		{% include help.html %}
+
+<!-- 			<section class="wow gallery">
+				{% for image in site.static_files %}
+				{% if image.path contains '/assets/images/gallery-4' %}
+				<img src="{{ site.baseurl }}{{ image.path }}">
+				{% endif %}
+				{% endfor %} -->
 			</section>
-			<ul class="wow gallery">
-				<li style="background-image: url(/assets/images/indd/pos-31-g.jpg)">
-					<div class="container">
-						
-						<h2>Acolhimento</h2>
-					</div>
-				</li>
-			</ul> -->
-				{% include aboutus.html %}
-
-			<ul class="wow gallery">
-				<li class="medium"  style="background-image: url(/assets/images/IMG_0563.jpg)"></li>
-				<li style="background-image: url(/assets/images/2020-02-09-18-08-59-791.jpg)"></li>
-				<li style="background-image: url(/assets/images/DSC_0034.jpg)"></li>
-				<li  class="medium" style="background-image: url(/assets/images/IMG-20200122-WA0003.jpg)"></li>
-			</ul>
-
-				{% include mission.html %}
-
-			<ul class="wow gallery">
-				<li class="medium" style="background-image: url(/assets/images/20191128_195515.jpg)"></li>
-				<li class="stretch" style="background-image: url(/assets/images/IMG_0998.jpg)"></li>
-				<li class="large" style="background-image: url(/assets/images/20200209_173239.jpg)"></li>
-				<li style="background-image: url(/assets/images/20191126_203253.jpg)"></li>
-
-			</ul>
-				{% include challenges.html %}
-
-			<ul class="wow gallery">
-				<li class="large" style="background-image: url(/assets/images/2020-02-09-18-26-50-644.jpg)"></li>
-				<li class="medium" style="background-image: url(/assets/images/20191130_191212.jpg)"></li>
-				<li style="background-image: url(/assets/images/20191222_110455.jpg)"></li>
-				<li class="medium" style="background-image: url(/assets/images/IMG_20200128_163044_112.jpg)"></li>
-			</ul>
-				{% include help.html %}
 			{% include footer.html %}
 			{% include scripts.html %}
 		</body>
