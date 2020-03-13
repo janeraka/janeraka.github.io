@@ -12,23 +12,31 @@ grid-template-columns: repeat($columncount, 1fr);
  @media (max-width: $screen-medium) {
 grid-template-columns: repeat(($columncount - 1), 1fr);
 }
-// @media (max-width: $screen-small) {
-// grid-template-columns: repeat(($columncount - 2), 1fr);
-// }
+@media (max-width: $screen-small) {
+display: block;
+}
 & > img {  
       width: 100% !important;
   height: auto !important;
   border: solid 10px white;
+
   @include transition;
       cursor: pointer;
+               @media (max-width: $screen-small) {
+   margin-top: -15px;
+   border: solid 7px white;
+}
      @include shadow(box, 0 5px 10px rgba(black, .3));
       &:hover {
          @include shadow(box, 0 5px 20px rgba(black, .3));
+         @media (min-width: $screen-small) {
     transform: scale($scaleup);
-    z-index: 1000 !important; 
+}
+    z-index: 1000; 
   }
   html.no-touch &:not(:hover) {
     opacity: $initialalpha;
+
   }
   &:nth-of-type(1):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
