@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	@media (min-width: $bp) {
+	@media (min-width: $screen-small) {
 		font-size: 16px;
 	}
 }
@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 	color: $color-brown;	
 }
 
-@media (max-width: $bp) {
+@media (max-width: $screen-small) {
 	h1 {
 		font-size: $font-size;
 	}
@@ -90,7 +90,7 @@ a {
 				padding-top: 0; 
 			}
 		}
-		@media (max-width: $bp) {
+		@media (max-width: $screen-small) {
 			svg {
 				width: 220px;
 			}
@@ -112,7 +112,7 @@ section {
 	h1, h2, h3, h4 {
 		padding: 0 $gap5 $gap 0 !important;
 		margin: 0;
-		@media (max-width: $bp) {
+		@media (max-width: $screen-small) {
 			padding-right: 0!important;
 		}
 
@@ -139,7 +139,7 @@ ul.grid {
 	margin: 0;
 	padding: 0;
 	grid-template-columns: repeat(3, 1fr);
-	@media (max-width: $bp) {
+	@media (max-width: $screen-small) {
 		grid-template-columns: 1fr;
 	}
 	a.btn {

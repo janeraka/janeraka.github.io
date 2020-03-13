@@ -4,7 +4,7 @@ header.main {
 	background-position: center bottom;
 	@include fadeIn;
 	padding: $gap 0;
-	@media (max-width: $bp) {
+	@media (max-width: $screen-small) {
 
 		background-size: 150% 150%;
 	}
@@ -15,7 +15,7 @@ header.main {
 
 		a.logo {
 			display: inline-block;
-			@media (min-width: $bp) {
+			@media (min-width: $screen-small) {
 				margin-top: 80px;
 			}
 			&.small {

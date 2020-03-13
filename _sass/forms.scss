@@ -10,7 +10,7 @@ article.form {
 	padding: $gap 0;
 	grid-gap: $gap;
 	grid-template-columns: repeat(2, 1fr);
-	@media (max-width: $bp) {
+	@media (max-width: $screen-small) {
 		grid-template-columns: 1fr;
 	}
 }
@@ -38,7 +38,7 @@ select, input {
 	border-radius: 0;
 	margin-bottom: $gaphalf;
 	font-family: monument;
-		@media (max-width: $bp) {
+		@media (max-width: $screen-small) {
 		display: block;
 	}
 	text-transform: uppercase;

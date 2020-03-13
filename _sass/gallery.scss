@@ -1,60 +1,62 @@
+$scaledown: .8;
+$scaleup: 1.2;
+$rotaterange: 5;
+$columncount: 4;
+
 .gallery {
  line-height: 0;
  margin: $gap3 0;
  column-gap: 0px;
 
- -moz-column-count: 3;
- -webkit-column-count: 3;
- column-count: 3;
+ -moz-column-count: $columncount;
+ -webkit-column-count: $columncount;
+ column-count: $columncount;
 
- @media (max-width: 1200px) {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2; 
+ @media (max-width: $screen-medium) {
+  -moz-column-count: ($columncount - 1);
+  -webkit-column-count: ($columncount - 1);
+  column-count: ($columncount - 1); 
 }
- @media (max-width: $bp) {
-  -moz-column-count: 1;
-  -webkit-column-count: 1;
-  column-count: 1; 
+@media (max-width: $screen-small) {
+  -moz-column-count: ($columncount - 2);
+  -webkit-column-count: ($columncount - 2);
+  column-count: ($columncount - 2); 
 }
 visibility: hidden; 
 /* Prevents :hover from triggering in the gaps between items */
 
-$scaledown: .8;
-$scaleup: 1.2;
-$rotaterange: 5;
-
 &:hover > img { 
   opacity: 0.6; 
   /* different times so its diff numbers per each, each time. i know. */
- &:nth-of-type(1):not(:hover) {
+  &:nth-of-type(1):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-  &:nth-of-type(2):not(:hover) {
+ &:nth-of-type(2):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }  
  &:nth-of-type(3):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-   &:nth-of-type(4):not(:hover) {
+ &:nth-of-type(4):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-    &:nth-of-type(5):not(:hover) {
+ &:nth-of-type(5):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-    &:nth-of-type(6):not(:hover) {
+ &:nth-of-type(6):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-    &:nth-of-type(7):not(:hover) {
+ &:nth-of-type(7):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-    &:nth-of-type(8):not(:hover) {
+ &:nth-of-type(8):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
-    &:nth-of-type(9):not(:hover) {
+ &:nth-of-type(9):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
 }
+
 & > img {
   width: 100% !important;
   height: auto !important;
@@ -67,10 +69,9 @@ $rotaterange: 5;
   &:hover {
     @include shadow(box, 0 5px 10px rgba(black, .3));
     opacity: 1; 
-      border: solid 10px white;
+    border: solid 10px white;
     transform: scale($scaleup);
     z-index: 1000; 
-    /* Fade in the currently hovered item */
   }
 }
 }

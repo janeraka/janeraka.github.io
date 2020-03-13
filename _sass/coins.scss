@@ -41,7 +41,7 @@ $coin: 100px;
 		height: $coin;
 		display: block;
 		margin: 0 5px;
-		@media (max-width: $bp) {
+		@media (max-width: $screen-small) {
 			margin: 5px;
 		}
 		text-align: center;
