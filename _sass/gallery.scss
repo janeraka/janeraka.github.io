@@ -1,33 +1,35 @@
 $scaledown: .8;
-$scaleup: 1.2;
+$scaleup: 1.1;
 $rotaterange: 5;
 $columncount: 3;
+$initialalpha: .6;
 
 .gallery {
  line-height: 0;
  margin: $gap3 0;
- column-gap: 0px;
-
- -moz-column-count: $columncount;
- -webkit-column-count: $columncount;
- column-count: $columncount;
-
+display: grid;
+grid-template-columns: repeat($columncount, 1fr);
  @media (max-width: $screen-medium) {
-  -moz-column-count: ($columncount - 1);
-  -webkit-column-count: ($columncount - 1);
-  column-count: ($columncount - 1); 
+grid-template-columns: repeat(($columncount - 1), 1fr);
 }
-@media (max-width: $screen-small) {
-  -moz-column-count: ($columncount - 2);
-  -webkit-column-count: ($columncount - 2);
-  column-count: ($columncount - 2); 
-}
-visibility: hidden; 
-/* Prevents :hover from triggering in the gaps between items */
-
-&:hover > img { 
-  opacity: 0.6; 
-  /* different times so its diff numbers per each, each time. i know. */
+// @media (max-width: $screen-small) {
+// grid-template-columns: repeat(($columncount - 2), 1fr);
+// }
+& > img {  
+      width: 100% !important;
+  height: auto !important;
+  border: solid 10px white;
+  @include transition;
+      cursor: pointer;
+     @include shadow(box, 0 5px 10px rgba(black, .3));
+      &:hover {
+         @include shadow(box, 0 5px 20px rgba(black, .3));
+    transform: scale($scaleup);
+    z-index: 1000 !important; 
+  }
+  html.no-touch &:not(:hover) {
+    opacity: $initialalpha;
+  }
   &:nth-of-type(1):not(:hover) {
    transform: rotate(#{randomNum(-$rotaterange, $rotaterange)}deg) scale($scaledown);
  }
@@ -57,24 +59,11 @@ visibility: hidden;
  }
 }
 
-& > img {
-  width: 100% !important;
-  height: auto !important;
-  border: solid 0px white;
-  @include transition;
-  cursor: pointer;
-  visibility: visible; 
-  /* Brings the child items back in, even though the parent is `hidden` */
-  @include shadow(box, 0 4px 0px rgba(0, 0, 0, 0));
-  &:hover {
-    @include shadow(box, 0 5px 10px rgba(black, .3));
-    opacity: 1; 
-    border: solid 10px white;
-    transform: scale($scaleup);
-    z-index: 1000; 
-  }
+
+
 }
-}
+
+
 
 
 
