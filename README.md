@@ -17,10 +17,12 @@
 
 ### Pendências, Design
 
-- logo animation, more subtle
 - english version
 - fix page title
-- coins animation
+- coins transition
+- paypal integration
+- 
+
 
 
 ### Pendências, Integrações
