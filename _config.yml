@@ -81,11 +81,11 @@ team:
     #   - name: instagram
     #     url: https://instagram.com/nonlinear
 
-  - name: Rodney Silva
-    email: rodney@thinks.com.br
-    role: 
-      pt: integrações, comércio eletrônico
-      en: integrations, e-commerce
+  # - name: Rodney Silva
+  #   email: rodney@thinks.com.br
+  #   role: 
+  #     pt: integrações, comércio eletrônico
+  #     en: integrations, e-commerce
     # social:
     #   - name: site
     #     url: https://praxis.nyc
