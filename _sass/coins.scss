@@ -2,6 +2,9 @@ $coin: 100px;
 .vendors {
 	text-align: right;
 	padding-bottom: $gap2;
+	@media (max-width: $screen-small) {
+		text-align: left;
+	}
 
 }
 .coins {
@@ -17,6 +20,14 @@ $coin: 100px;
 		a {
 		font-size: 80%;
 		margin-left: 10px;
+	}
+	@media (max-width: $screen-small) {
+		text-align: left;
+		a {
+			display: block;
+			margin: 0;
+		}
+		
 	}
 	}
 	li {
