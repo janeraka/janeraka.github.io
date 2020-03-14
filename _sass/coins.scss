@@ -6,15 +6,18 @@ $coin: 100px;
 }
 .coins {
 	@include reset(list);
-	text-align: center;
-	a[data-toggle="collapse"] {
-		text-align: right;
+	&:not(#transferwise) {
+		text-align: center;
 	}
+
 	margin: 0;
 	padding-top: $gap;
-	[data-toggle="collapse"] {
+	.actions {
+		text-align: right;
+		a {
 		font-size: 80%;
-		display: block;
+		margin-left: 10px;
+	}
 	}
 	li {
 		display: inline-block;
@@ -65,13 +68,13 @@ $coin: 100px;
 				display: block;
 			}
 		}
-		&.type-custom {
+		&.type-custom, &.type-manual {
 			.value {
 				font-size: 15px;
 				line-height: 100%;
 			}
 		}
-		&:not(.type-custom) .value:before {
+		&:not(.type-custom):not(.type-manual) .value:before {
 					content: "$";
 				}
 		&:hover {

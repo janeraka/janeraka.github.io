@@ -1,0 +1,72 @@
+	<h2 class="wow">Doações</h2>
+	<div class="description wow">
+		<p>Nós gostariamos que você ajudasse nossa organização e nossa causa.</p>
+		<p>É extremamente importante que consigamos todos os recursos possíveis para proteger nossa Amazônia ameaçada e seus povos ancentrais.</p>
+	</div>
+
+
+ 	<div class="accordion" id="doacao">
+ 		<div id="monthly" class="coins collapse show" aria-labelledby="monthly" data-parent="#doacao">
+ 	
+                      	<ul class=" monthly">
+		{% for doacao in site.doacoes.monthly %}
+		<li>
+			<a href="{{ doacao.link }}" class="coin wow type-{{ doacao.value }}" target="paypal" data-wow-delay="{{ doacao.delay }}" >
+			{% include logos/coin.svg %}
+			<div class="details">
+				<div class="value">{{ doacao.value }}</div>
+				<span class="type">/mês</span>
+			</div>
+		</a>
+		</li>
+		{% endfor %}
+</ul>
+<div class="actions wow" data-wow-delay="1200ms">
+	<a href="#" data-toggle="collapse" data-target="#single" aria-expanded="false" aria-controls="single">Eu prefiro fazer uma doação única</a>  <a href="#" data-toggle="collapse" data-target="#transferwise" aria-expanded="true" aria-controls="transferwise">Opção Transferwise</a>
+</div>
+ 		</div>
+ 		<div id="single" class="coins collapse" aria-labelledby="single" data-parent="#doacao">
+ 	   	<ul class="single">
+		{% for doacao in site.doacoes.single %}
+		<li>
+			<a href="{{ doacao.link }}" class="coin wow type-{{ doacao.value }}" target="paypal" data-wow-delay="{{ doacao.delay }}" >
+			{% include logos/coin.svg %}
+			<div class="details">
+				<div class="value">{{ doacao.value }}</div>
+			</div>
+		</a>
+		</li>
+		{% endfor %}
+</ul>
+ 		<div class="actions wow" data-wow-delay="1200ms">
+ 			<a href="#" data-toggle="collapse" data-target="#monthly" aria-expanded="true" aria-controls="monthly">Eu prefiro fazer uma doação mensal</a> <a href="#" data-toggle="collapse" data-target="#transferwise" aria-expanded="true" aria-controls="transferwise">Opção Transferwise</a>
+ 		</div>
+
+ 		</div>
+<div id="transferwise" class="coins collapse" aria-labelledby="transferwise" data-parent="#doacao">
+ <a href="https://www.transferwise.com/" class="btn" target="_blank">TransferWise</a>
+				<p>
+					Time'i Assurini<br>
+					
+					{% if page.languages contains "pt" %}
+					Banco Bradesco<br>
+					Ag: 5592<br>
+					Conta Poupança: 1000057-2<br>
+					{% else %}
+					Bradesco Bank<br>
+					Routing: 5592<br>
+					Savings Acct: 1000057-2<br>
+					{% endif %}
+					CPF 70365335282<br>
+					Tv. 3 de Maio, 1040 - São Brás, Belém/PA <br>
+					CEP: 66063-388<br>
+					Cel: 21 987999912
+				</p>	
+	<div class="actions">
+ 			<a href="#" data-toggle="collapse" data-target="#monthly" aria-expanded="true" aria-controls="monthly">Opção PayPal</a>
+ 		</div>
+ 		</div>
+ 	</div>
+ 	<div class="vendors wow" data-wow-delay="1200ms">
+ 		{% include logos/vendors.svg %}
+ 	</div>

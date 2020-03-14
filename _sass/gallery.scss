@@ -26,7 +26,7 @@ display: block;
    margin-top: -15px;
    border: solid 7px white;
    &:nth-of-type(4),  &:nth-of-type(5),  &:nth-of-type(6),  &:nth-of-type(7), &:nth-of-type(8),  &:nth-of-type(9),  &:nth-of-type(10) {
-    display: none;
+    display: none; // small screen, 3 pics tops
    }
 }
      @include shadow(box, 0 5px 10px rgba(black, .3));

@@ -18,10 +18,9 @@
 ### Pendências, Design
 
 - english version
-- fix page title
-- coins transition
 - paypal integration
-- 
+- cover for articles
+- switch
 
 
 
