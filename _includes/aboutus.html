@@ -7,24 +7,9 @@
 
 	<p>Atualmente, dois pontos físicos na região norte do Brasil formam a infraestrutura básica de Janeraka:</p>
 
-	<!-- ul>
-		<li><strong>Janeraka Aldeia 2 Pages</strong> - <a href="https://terrasindigenas.org.br/pt-br/terras-indigenas/3733">Terra Indígena Koatinemo</a></li>
-		<!-- 	<li><strong>Janeraka Altamira</strong> - Altamira / PA</li> -->
-		<!-- li><strong>Janeraka Belém</strong> - Belém / PA</li>
-	</ul -->
-		
-	<table>
-		<tr>
-			<th>Janeraka Aldeia 2 Pages</th>
-			<th>Janeraka Belém</th>
-		</tr>
-		<tr>
-			<th><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018495.0077711017!2d-52.84501401915023!3d-4.31746837364097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92ed1423067a2207%3A0xe0dbdba1fde1ee8f!2sKoatinemo%2C%20Altamira%20-%20State%20of%20Par%C3%A1!5e0!3m2!1sen!2sbr!4v1584458572183!5m2!1sen!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></th>
-			<th><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.542631873241!2d-48.476563985409484!3d-1.4489218362334795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c26bab61229%3A0x87394ed6903fb450!2zVHYuIFRyw6pzIGRlIE1haW8sIDEwNDAgLSBTw6NvIEJyw6FzLCBCZWzDqW0gLSBQQSwgNjYwNjMtMzkw!5e0!3m2!1sen!2sbr!4v1584458377392!5m2!1sen!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></th>
-		</tr>
-	</table>
+{% include maps.html %}
 
-		<p></p>
+
 	<p>Juntos, esses dois pontos conectam a floresta e seus povos à maior capital da região e ao mundo.</p>
 	
 		<h3> Para saber mais sobre a nossa luta</h3>
@@ -32,7 +17,9 @@
 	{% else %}
 	<h1>About Us</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus aut animi totam velit similique pariatur soluta ut aliquid maiores.</p>
+	{% include maps.html %}
 	<p>Omnis quos aliquam aliquid maxime quisquam quidem, pariatur nesciunt velit doloribus, placeat mollitia, perferendis perspiciatis quo eaque fugiat, doloremque aspernatur.</p>
+
 	{% endif %}
 	<a href="/assets/pdf/agenda-awaete.pdf" class="btn" target="_blank">Agenda Awaete (PDF)</a>
 	<a href="/assets/pdf/janeraka-belem.pdf" class="btn" target="_blank">Janeraka Belém (PDF)</a>

@@ -38,6 +38,10 @@ select, input {
 	border-radius: 0;
 	margin-bottom: $gaphalf;
 	font-family: monument;
+	&.btn-small {
+			font-size: 80%;
+		
+	}
 		@media (max-width: $screen-small) {
 		display: block;
 	}
@@ -70,5 +74,32 @@ select, input {
 	.btn {
 		padding-left: $gap;
 		padding-right: $gap;
+	}
+}
+
+
+.popover {
+
+	.map {
+		height: 250px;
+		width: 100%;
+background-size: cover;
+&.map1 {
+	background-image: url(/assets/images/map1.png);
+}
+&.map2 {
+	background-image: url(/assets/images/map2.png);
+}
+	}
+	.popover-body {
+padding: $gap;
+.btn {
+	display: block;
+	margin: 10px 0 0 0;
+}
+	@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.1));
+	&:hover {
+	@include shadow(box, 0 5px 5px rgba(black, .2));
+	}
 	}
 }
