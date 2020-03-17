@@ -8,7 +8,9 @@ html {
 	scroll-behavior: smooth;
 }
 
+
 body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	@media (min-width: $screen-small) {
 		font-size: 16px;
 	}

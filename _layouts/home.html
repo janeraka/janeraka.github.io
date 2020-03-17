@@ -3,14 +3,18 @@ layout: home
 ---
 <html>
 {% include head.html %}
-<body>
+<body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}">
 	<header class="main">
 		<div class="container">
 			{% include logo.html %}
 		</div>
 	</header>
+<div class="container switch wow">
+	{% include switch.html %}
+</div>
 	<article>
 
+				
 		{% include aboutus.html %}
 
 		<section class="wow gallery">

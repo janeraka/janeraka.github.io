@@ -38,16 +38,16 @@ donations:
       delay: 900ms
   single:
     - value: 5
-      link: #
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2PEX9RME4WT3S&source=url
       delay: 0ms
     - value: 15
-      link: #
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TVQVB9VXCRJWL&source=url
       delay: 300ms
     - value: 25
-      link: #
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VN7LV8B876FDG&source=url
       delay: 600ms
     - value: custom
-      link: #
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DDQMR79P2M7UE&source=url
       delay: 900ms
 
 doacoes:

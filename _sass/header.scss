@@ -8,7 +8,6 @@ header.main {
 
 		background-size: 150% 150%;
 	}
-	margin-bottom: $gap3;
 	background-color: #ccc;
 	.container {
 		text-align: right;
@@ -24,4 +23,40 @@ header.main {
 		}
 	}
 
+}
+
+.switch {
+	&.wow {
+		@include fadeIn($delay: $stagger * 5);
+	}
+	padding: 0;
+	margin-bottom: $gap3;
+	padding-right:  $gap2 + 10;
+a.btn {
+	display: block;
+	float: right;
+	width: 220px;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 100%;
+	padding-top: 6px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: none;
+	border-top: solid 3px darken($color-orange, 20%);
+	&:hover {
+		border-top: solid 3px darken($color-red, 20%);
+
+	}
+	body.home & {
+		width: 267px;
+		@media (max-width: $screen-small) {
+			width: 220px;
+			
+		}
+	}
+
+}
+	
+	
+				
 }
