@@ -92,10 +92,13 @@ background-size: cover;
 }
 	}
 	.popover-body {
-padding: $gap;
+padding: 0;
+padding-bottom: $gaphalf;
 .btn {
 	display: block;
-	margin: 10px 0 0 0;
+	margin: $gaphalf;
+	margin-bottom: 0;
+	
 }
 	@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.1));
 	&:hover {
