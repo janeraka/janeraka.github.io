@@ -45,8 +45,9 @@ h1, h2, h3, h4 {
 }
 
 .pending {
-	color: #666;
+	@include opacity(40);
 	font-family: ‘Courier New’, Courier, monospace;
+	font-style: italic;
 }
 
 a {
