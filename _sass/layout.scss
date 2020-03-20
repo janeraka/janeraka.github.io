@@ -146,8 +146,8 @@ ul.grid {
 	grid-gap: $gap2;
 	@include reset(list);
 	margin: 0;
-	padding: 0;
-	grid-template-columns: repeat(3, 1fr);
+	padding: $gap 0;
+	grid-template-columns: 1fr 1fr;
 	@media (max-width: $screen-small) {
 		grid-template-columns: 1fr;
 	}

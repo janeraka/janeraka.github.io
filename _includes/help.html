@@ -3,26 +3,13 @@
 
 
 			{% if page.languages contains "pt" %}
-		{% if page.slug contains "home2" %}
-		<h1 class="wow">O que fazer?</h1>	
-<div id="donations">
-	{% include doacoes.html %}
-</div>
-
-			{% else %}
-				<h1 class="wow">O que fazer?</h1>
-		{% include donations-old.html %}
-	{% endif %}
+<h1 class="wow">O que fazer?</h1>
 
 
 	{% else %}
 	<h1 class="wow">How to Help</h1>
-
-<div id="donations">
-	{% include donations.html %}
-</div>
 	{% endif %}
 
-
+{% include donations-old.html %}
 	{% include newsletter.html %}
-		</article>
+	</section>
