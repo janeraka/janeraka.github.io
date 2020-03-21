@@ -76,19 +76,19 @@ select, input {
 		padding-right: $gap;
 	}
 }
-
+$map: 250px;
 
 .popover {
 
 	.map {
-		height: 250px;
-		width: 100%;
+		height: $map;
+		width: $map;
 background-size: cover;
 &.map1 {
-	background-image: url(/assets/images/map1.png);
+	background-image: url(/assets/images/maps/altamira.gif);
 }
 &.map2 {
-	background-image: url(/assets/images/map2.png);
+	background-image: url(/assets/images/maps/tres.gif);
 }
 	}
 	.popover-body {
@@ -98,6 +98,8 @@ padding-bottom: $gaphalf;
 	display: block;
 	margin: $gaphalf;
 	margin-bottom: 0;
+	padding: $gaphalf;
+	width: $map - $gap;
 	
 }
 	@include shadow(box, 0 4px 0px rgba(0, 0, 0, 0.1));
