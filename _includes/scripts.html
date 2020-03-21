@@ -2,42 +2,51 @@
 	<script src="/assets/vendor/popper.min.js"></script>
 	<script src="/assets/vendor/bootstrap.min.js"></script>
 	<script src="/assets/vendor/wow.min.js"></script>
-  <script src="/assets/vendor/modernizr.js"></script>
-  <script src="/assets/vendor/detectizr.js"></script>
+	<script src="/assets/vendor/modernizr.js"></script>
+	<script src="/assets/vendor/detectizr.js"></script>
 	<script type="text/javascript">
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});
 
 
-    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: '<div class="red">Coming March 2014</div>'})
-    .on("mouseenter", function () {
-        var _this = this;
-        $(this).popover("show");
-        $(".popover").on("mouseleave", function () {
-            $(_this).popover('hide');
-        });
-    }).on("mouseleave", function () {
-        var _this = this;
-        setTimeout(function () {
-            if (!$(".popover:hover").length) {
-                $(_this).popover("hide");
-            }
-        }, 300);
-});
+		$('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: '<div class="red">Coming March 2014</div>'})
+		.on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+				$(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+				if (!$(".popover:hover").length) {
+					$(_this).popover("hide");
+				}
+			}, 300);
+		});
 		new WOW({
                       boxClass:     'wow',      // default
                       animateClass: 'animated', // default
                       offset:       100,          // default
                       mobile:       true,       // default
                       live:         true        // default
-                    }
-                    ).init();
-                  </script>
+                  }
+                  ).init();
+              </script>
 
-                  <script type="text/javascript">
-                  	$('a.to-bottom').click(function() {
-                  		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+              <script type="text/javascript">
+              	$('a.to-bottom').click(function() {
+              		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
-                  	});
-                  </script>
+              	});
+              </script>
+              <!-- Global site tag (gtag.js) - Google Analytics -->
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161449968-1"></script>
+              <script>
+              	window.dataLayer = window.dataLayer || [];
+              	function gtag(){dataLayer.push(arguments);}
+              	gtag('js', new Date());
+
+              	gtag('config', 'UA-161449968-1');
+              </script>
