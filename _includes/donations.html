@@ -1,50 +1,35 @@
-	<h2 class="wow">Donations</h2>
-	<div class="description wow">
+
+<div id="donations"  class="wow">
+{% if page.languages contains "pt" %}
+<h2>Doação</h2> 
+		<p>Devido a essas circunstâncias, existe uma grande urgência do Povo Awaete em reestruturar seu território, se capacitando para a nova realidade da etnia e seus desafios.</p>
+		<p>Assim, o projeto Janeraka (com seus dois pontos físicos de acolhimento) é de essencial importância para as demandas Awaete. E dado o descaso que sofremos das instituições "responsáveis" pela causa indígena, recorremos às redes em busca de apoio financeiro para garantir a manutenção, logística e dignidade da equipe que tem dado o seu melhor para continuar na resistência.</p> 
+		{% else %}
+		<h2>Donation</h2> 
 		<p>Due to these circumstances, we have a great urgency to restructure our territory, enabling us to face the new reality and challenges of the Awaete ethnic group.</p>
 		<p>Thus, the Janeraka project (with its two physical reception points) is of key importance for Awaete demands. And given the neglect that we suffer from the institutions "responsible" for the indigenous cause, we turn to the networks for financial support to ensure the maintenance, logistics and dignity of the team that has been doing its best to continue in the resistance.</p>
-	</div>
+	
+	{% endif %}
+		
 
+		{% if page.slug contains "home2" %}
+	{% include coins.html %}
+			{% else %}
+			<ul class="grid">
+			<li>
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DDQMR79P2M7UE&source=url" class="btn" target="_blank">PayPal</a>
+				<p>
+	{% if page.languages contains "pt" %}
+		para
+		{% else %}
+	to
+		{% endif %} {{ site.email }}
+		
+	</p>
 
- 	<div class="accordion" id="donation">
- 		<div id="monthly" class="coins collapse show" aria-labelledby="monthly" data-parent="#donation">
- 	
-                      	<ul class=" monthly">
-		{% for donation in site.donations.monthly %}
-		<li>
-			<a href="{{ donation.link }}" class="coin wow type-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
-			{% include logos/coin.svg %}
-			<div class="details">
-				<div class="value">{{ donation.value }}</div>
-				<span class="type">/mo</span>
-			</div>
-		</a>
-		</li>
-		{% endfor %}
-</ul>
-<div class="actions wow" data-wow-delay="1200ms">
-	<a href="#" data-toggle="collapse" data-target="#single" aria-expanded="false" aria-controls="single">I prefer to donate a single time</a>  <a href="#" data-toggle="collapse" data-target="#transferwise" aria-expanded="true" aria-controls="transferwise">Use Transferwise instead</a>
-</div>
- 		</div>
- 		<div id="single" class="coins collapse" aria-labelledby="single" data-parent="#donation">
- 	   	<ul class="single">
-		{% for donation in site.donations.single %}
-		<li>
-			<a href="{{ donation.link }}" class="coin wow type-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
-			{% include logos/coin.svg %}
-			<div class="details">
-				<div class="value">{{ donation.value }}</div>
-			</div>
-		</a>
-		</li>
-		{% endfor %}
-</ul>
- 		<div class="actions wow" data-wow-delay="1200ms">
- 			<a href="#" data-toggle="collapse" data-target="#monthly" aria-expanded="true" aria-controls="monthly">I prefer to donate monthly</a> <a href="#" data-toggle="collapse" data-target="#transferwise" aria-expanded="true" aria-controls="transferwise">Use Transferwise instead</a>
- 		</div>
-
- 		</div>
-<div id="transferwise" class="coins collapse" aria-labelledby="transferwise" data-parent="#donation">
- <a href="https://www.transferwise.com/" class="btn" target="_blank">TransferWise</a>
+</li>
+			<li>
+				<a href="https://www.transferwise.com/" class="btn" target="_blank">TransferWise</a>
 				<p>
 					Time'i Assurini<br>
 					
@@ -62,11 +47,17 @@
 					CEP: 66063-388<br>
 					Cel: 21 987999912
 				</p>	
-	<div class="actions">
- 			<a href="#" data-toggle="collapse" data-target="#monthly" aria-expanded="true" aria-controls="monthly">Use PayPal instead</a>
- 		</div>
- 		</div>
- 	</div>
- 	<div class="vendors wow" data-wow-delay="1200ms">
- 		{% include logos/vendors.svg %}
- 	</div>
+			</li>
+
+			<!-- <li>
+				<a href="https://cnpj.biz/35069094000130" class="btn" target="_blank">CNPJ</a>
+				<p>35069094000130</p>
+			</li> -->
+			
+</ul>
+				{% endif %}
+
+</div>
+
+
+
