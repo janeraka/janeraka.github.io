@@ -17,12 +17,12 @@
 
 ### Pendências, Design
 
-- english version
-- paypal integration
-- cover for articles
-- switch
-
-
+- social media (config.yml?)
+- maps link, less link, more button
+- elseif logic for MORE languages (config.yml?)
+- separar objetos de config.yml, more scalable
+- outras linguas
+- como ajudar: tradutores (link pra email)
 
 ### Pendências, Integrações
 
