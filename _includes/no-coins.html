@@ -1,0 +1,40 @@
+<ul class="grid">
+			<li>
+				<a href="https://www.paypal.com/" class="btn" target="_blank">PayPal</a>
+				<p>
+	{{ site.email }}
+		{% if page.languages contains "pt" %}
+		<span class="notes">Escolha <strong>Amigos e Família</strong></span> 
+		{% else %}
+		<span class="notes">Choose <strong>Friends and Family</strong></span>
+		{% endif %}
+	</p>
+
+</li>
+			<li>
+				<a href="https://www.transferwise.com/" class="btn" target="_blank">TransferWise</a>
+				<p>
+					Time'i Assurini<br>
+					
+					{% if page.languages contains "pt" %}
+					Banco Bradesco<br>
+					Ag: 5592<br>
+					Conta Poupança: 1000057-2<br>
+					{% else %}
+					Bradesco Bank<br>
+					Routing: 5592<br>
+					Savings Acct: 1000057-2<br>
+					{% endif %}
+					CPF 70365335282<br>
+					Tv. 3 de Maio, 1040 - São Brás, Belém/PA <br>
+					CEP: 66063-388<br>
+					Cel: 21 987999912
+				</p>	
+			</li>
+
+	<!-- 		<li>
+				<a href="https://cnpj.biz/35069094000130" class="btn" target="_blank">CNPJ</a>
+				<p>35069094000130</p>
+			</li> -->
+			
+</ul>
