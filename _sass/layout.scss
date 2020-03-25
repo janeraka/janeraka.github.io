@@ -22,7 +22,6 @@ body {
 	display: block;
 }
 
-
 h1, h2, h3, h4 {
 	font-family: monument;
 	text-transform: uppercase;
@@ -140,7 +139,7 @@ section {
 	max-width: 700px;
 	padding: 0 $gap2;
 	&.error {
-		margin-bottom: $gap3;
+		margin: $gap3 0;
 	}
 }
 ul.grid {
@@ -155,6 +154,30 @@ ul.grid {
 	}
 	a.btn {
 		display: block;
+	}
+}
+$social: 30px;
+.social {
+	display: grid;
+	text-align: center;
+	padding-bottom: $gap3;
+	width: 200px;
+	grid-gap: $gap;
+	grid-template-columns: repeat(3, $social);
+	&:hover {
+		a:not(:hover) {
+			@include opacity(40);
+		}
+		a:hover {
+			@include scale(1.5);
+		}
+	}
+	a {
+		width: $social;
+		height: $social;
+		background-size: $social $social;
+		@include transition;
+		background-repeat: no-repeat;
 	}
 }
 

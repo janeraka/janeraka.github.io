@@ -10,7 +10,7 @@ header.main {
 	}
 	background-color: #ccc;
 	.container {
-		text-align: right;
+		text-align: left;
 
 		a.logo {
 			display: inline-block;
@@ -31,11 +31,10 @@ header.main {
 	}
 	padding: 0;
 	margin-bottom: $gap3;
-	padding-right:  $gap2 + 10;
+	padding-left:  $gap2 + 10;
 a.btn {
 	display: block;
-	float: right;
-	width: 220px;
+	width: 267px;
 	font-weight: bold;
 	font-size: 13px;
 	line-height: 100%;
@@ -45,18 +44,6 @@ a.btn {
 	border-top: solid 3px darken($color-orange, 20%);
 	&:hover {
 		border-top: solid 3px darken($color-red, 20%);
-
 	}
-	body.home & {
-		width: 267px;
-		@media (max-width: $screen-small) {
-			width: 220px;
-			
-		}
-	}
-
-}
-	
-	
-				
+}				
 }
