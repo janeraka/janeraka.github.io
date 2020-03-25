@@ -1,0 +1,54 @@
+dollars:
+  monthly:
+    - value: 5
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QEYKGU7E6N8WQ
+      delay: 0ms
+    - value: 15
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AZQZRSY4CXW6Q
+      delay: 300ms
+    - value: 25
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBHT55BVNSZ72
+      delay: 600ms
+    - value: custom
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UK8YAG3RWKX7E&source=url
+      delay: 900ms
+  single:
+    - value: 5
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2PEX9RME4WT3S&source=url
+      delay: 0ms
+    - value: 15
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DDQMR79P2M7UE&source=url
+      delay: 300ms
+    - value: 25
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VN7LV8B876FDG&source=url
+      delay: 600ms
+    - value: custom
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TVQVB9VXCRJWL&source=url
+      delay: 900ms
+reais:
+  monthly:
+    - value: 5
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QEYKGU7E6N8WQ
+      delay: 0ms
+    - value: 25
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AZQZRSY4CXW6Q
+      delay: 300ms
+    - value: 50
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBHT55BVNSZ72
+      delay: 600ms
+    - value: manual
+      link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TC5WE2JAXKX3G&source=url
+      delay: 900ms
+  single:
+    - value: 5
+      link: #
+      delay: 0ms
+    - value: 25
+      link: #
+      delay: 300ms
+    - value: 50
+      link: #
+      delay: 600ms
+    - value: manual
+      link: #
+      delay: 900ms

@@ -4,7 +4,7 @@
  		<div id="monthly" class="coins collapse show" aria-labelledby="monthly" data-parent="#donation">
  	
                       	<ul class=" monthly">
-		{% for donation in site.donations.monthly %}
+		{% for donation in site.data.donations.dollars.monthly %}
 		<li>
 			<a href="{{ donation.link }}" class="coin wow type-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
 			{% include logos/coin.svg %}
@@ -22,7 +22,7 @@
  		</div>
  		<div id="single" class="coins collapse" aria-labelledby="single" data-parent="#donation">
  	   	<ul class="single">
-		{% for donation in site.donations.single %}
+		{% for donation in site.data.donations.dollars.single %}
 		<li>
 			<a href="{{ donation.link }}" class="coin wow type-{{ donation.value }}" target="paypal" data-wow-delay="{{ donation.delay }}" >
 			{% include logos/coin.svg %}

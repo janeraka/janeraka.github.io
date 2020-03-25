@@ -6,7 +6,7 @@
 <h3>Gratitude</h3>
 {% endif %}
 
-{% for member in site.team %}
+{% for member in site.data.team %}
 <p><strong>{{ member.name }}:</strong> <a href="mailto:{{ member.email }}?subject=Janeraka">email</a>{% for group in member.social %}, <a href="{{ group.url }}" target="{{ group.name }}">{{ group.name }}</a>{% endfor %} 
 	<br>
 	{% if page.languages contains "pt" %}

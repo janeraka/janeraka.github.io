@@ -1,0 +1,45 @@
+- name: Nicholas Frota
+  email: info@nicholasfrota.com
+  role: 
+    pt: designer e gerente de projeto
+    en: graphic designer and project manager
+  social:
+    - name: site
+      url: https://praxis.nyc
+    - name: mastodon
+      url: https://mastodon.social/@nonlinear
+    - name: twitter
+      url: https://twitter.com/nonlinear
+    - name: instagram
+      url: https://instagram.com/nonlinear
+
+- name: Danilo Vaz
+  email: dnllvrvz@gmail.com
+  role: 
+    pt: integrações, DNS
+    en: integrations, DNS
+  # social:
+  #   - name: site
+  #     url: https://praxis.nyc
+  #   - name: mastodon
+  #     url: https://mastodon.social/@nonlinear
+  #   - name: twitter
+  #     url: https://twitter.com/nonlinear
+  #   - name: instagram
+  #     url: https://instagram.com/nonlinear
+
+# - name: Rodney Silva
+#   email: rodney@thinks.com.br
+#   role: 
+#     pt: integrações, comércio eletrônico
+#     en: integrations, e-commerce
+  # social:
+  #   - name: site
+  #     url: https://praxis.nyc
+  #   - name: mastodon
+  #     url: https://mastodon.social/@nonlinear
+  #   - name: twitter
+  #     url: https://twitter.com/nonlinear
+  #   - name: instagram
+  #     url: https://instagram.com/nonlinear
+
