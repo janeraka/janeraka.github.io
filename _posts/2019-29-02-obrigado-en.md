@@ -5,7 +5,7 @@ slug: obrigado
 categories: obrigado
 status: draft
 languages: en
-description: aaa
+description: Shelter for People of the Forest in transit
 date: 2019-01-21 04:03:16 -0500
 permalink: /en/:slug
 ---
