@@ -15,6 +15,19 @@ article.form {
 	}
 }
 
+// #mc_embed_signup_scroll {
+// 	h2 {
+// 		display: none;
+// 	}
+// 	display: grid;
+// 	padding: $gap 0;
+// 	grid-gap: $gap;
+// 	grid-template-columns: repeat(2, 1fr);
+// 	@media (max-width: $screen-small) {
+// 		grid-template-columns: 1fr;
+// 	}
+// }
+
 select, input {
 	border: solid 1px #999;
 	padding: $gaphalf $gap;
