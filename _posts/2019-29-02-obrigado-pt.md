@@ -14,6 +14,7 @@ Você acaba de apoiar o plantio da grande floresta de conexões Awaete, da Amaz�
 
 Vamos cotinuar buscando cada vez mais formas de compartilhar nossos frutos criando uma grande colheita? 
 
-Continue conosco!
+Continue conosco! Por favor assine nossa newsletter abaixo para saber de nossas conquistas e desafios.
 
 *Ajepe*
+

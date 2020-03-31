@@ -34,10 +34,15 @@ header.main {
 	padding-left:  $gap2 + 10;
 a.btn {
 	display: block;
-	width: 267px;
+	width: 200;
+	.home & {
+		width: 267px;
+	}
 	font-weight: bold;
 	font-size: 13px;
 	line-height: 100%;
+	padding-left: $gaphalf;
+	padding-right: $gaphalf;
 	padding-top: 6px;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: none;
