@@ -5,14 +5,19 @@
 {% else %}
 <h3>Gratitude</h3>
 {% endif %}
-
+<ul class="member">
 {% for member in site.data.team %}
-<p><strong>{{ member.name }}:</strong> <a href="mailto:{{ member.email }}?subject=Janeraka">email</a>{% for group in member.social %}, <a href="{{ group.url }}" target="{{ group.name }}">{{ group.name }}</a>{% endfor %} 
+<li><strong>{{ member.name }}</strong> 
 	<br>
-	{% if page.languages contains "pt" %}
+{% if page.languages contains "pt" %}
 	{{ member.role.pt }}
 	{% else %}
 	{{ member.role.en }}
 	{% endif %}
-</p>
+	<ul class="links">
+		{% if member.email %}<li><a href="mailto:{{ member.email }}?subject=Janeraka">email</a></li>{% endif %}
+		{% for group in member.social %}<li><a href="{{ group.url }}" target="{{ group.name }}">{{ group.name }}</a></li>{% endfor %}
+	</ul>
+</li>
 {% endfor %}
+</ul>

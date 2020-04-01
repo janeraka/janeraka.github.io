@@ -10,22 +10,34 @@ footer.footer {
 
 }
 
-$avatar: 50px;
 
-.team {
-	.item {
-		display: grid !important;
-		grid-gap: $gap;
-		grid-template-columns: $avatar 1fr;
-		.avatar {
-			background-size: cover;
-			height: $avatar;
-			width: $avatar;
-			@include radius(50%);
-		}
+ul.member {
+	@include reset(list);
+	@include reset(all);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	@media (max-width: $screen-small) {
+		grid-template-columns: 1fr;
 	}
+	grid-gap: $gap;
 	
+
+ul.links {
+	@include reset(all);
+	@include reset(list);
+	li {
+		display: inline-block;
+			&:not(:last-of-type):after {
+				content: ",";
+				margin-right: 5px;
+			}
+
+	}
+
 }
+}
+
+
 
 .collapse {
 	margin-bottom: $gap;

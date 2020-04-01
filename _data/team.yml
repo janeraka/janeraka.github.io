@@ -1,8 +1,8 @@
 - name: Nicholas Frota
   email: info@nicholasfrota.com
   role: 
-    pt: designer e gerente de projeto
-    en: graphic designer and project manager
+    pt: design e gerente de projeto
+    en: graphic design and project manager
   social:
     - name: site
       url: https://praxis.nyc
@@ -44,7 +44,6 @@
   #     url: https://instagram.com/nonlinear
 
 - name: Nuaj del Fiol
-  email: nuajdelfiol@protonmail.com
   role: 
     pt: comunicações, newsletter
     en: communications, newsletter
