@@ -12,7 +12,7 @@
   "dependencies": {
     "animatewithsass": "^3.2.1",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0",
     "lite-youtube-embed": "0.0.0",
     "wowjs": "^1.1.3"
