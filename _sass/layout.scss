@@ -185,3 +185,20 @@ blockquote {
 	@extend h3;
 	text-transform: none;
 }
+
+#donations {
+	margin-bottom: $gap2;
+	.actions {
+		@include reset(all);
+		@include reset(list);
+		a.btn span {
+			display: block;
+
+				@media (min-width: $screen-small) {
+		text-align: left;
+	}
+			margin-top: -5px;
+			font-size: 70%;
+		}
+	}
+}
