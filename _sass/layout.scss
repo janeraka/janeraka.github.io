@@ -5,17 +5,6 @@
 }
 
 
-.tooltip {
-	margin-bottom: $gaphalf;
-	.tooltip-inner {
-	font-family: monument;
-	text-transform: uppercase;
-@include radius(0);
-	color: white;	
-}
-}
-
-
 html {
 	scroll-behavior: smooth;
 }
@@ -191,6 +180,7 @@ $social: 30px;
 		@include transition;
 		background-repeat: no-repeat;
 	}
+	
 }
 
 blockquote {
@@ -206,11 +196,20 @@ blockquote {
 		a.btn span {
 			display: block;
 
-				@media (min-width: $screen-small) {
-		text-align: left;
-	}
+			@media (min-width: $screen-small) {
+				text-align: left;
+			}
 			margin-top: -5px;
 			font-size: 70%;
 		}
+	}
+}
+.tooltip {
+	margin-bottom: $gaphalf;
+	.tooltip-inner {
+		font-family: monument;
+		text-transform: uppercase;
+		@include radius(0);
+		color: white;	
 	}
 }
