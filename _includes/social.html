@@ -8,9 +8,9 @@
 			{% endif %}
 			<div class="social">
 		{% for social in site.data.social %}
-
-	<a href="{{ social.link }}" target="{{ social.name }}"  style="background-image: url('/assets/logos/{{ social.name }}.svg')">
+	<a href="{{ social.link }}" target="{{ social.name }}" data-toggle="tooltip" data-placement="top" title="{{ social.name }}" style="background-image: url('/assets/logos/{{ social.name }}.svg')">
 	</a>
+
 
 		{% endfor %}
 	</div>
