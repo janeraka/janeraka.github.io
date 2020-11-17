@@ -143,7 +143,7 @@ section {
 		margin: $gap3 0;
 	}
 }
-ul.grid {
+.grid {
 	display: grid;
 	grid-gap: $gap2;
 	@include reset(list);
@@ -212,4 +212,9 @@ blockquote {
 		@include radius(0);
 		color: white;	
 	}
+}
+
+.bancaria ul.actions strong {
+width: 60px; 
+display: inline-block;
 }
